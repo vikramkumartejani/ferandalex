@@ -12,6 +12,7 @@ const config: Config = {
         'clashdisplay-regular': ['ClashDisplay-Regular', 'sans-serif'],
         'clashdisplay-light': ['ClashDisplay-Light', 'sans-serif'], 
         'clashdisplay-bold': ['ClashDisplay-Bold', 'sans-serif'], 
+        'clashdisplay-semibold': ['ClashDisplay-Semibold', 'sans-serif'], 
       },
       colors: {
         'navbar-bg': '#FFFFFF2B',  
