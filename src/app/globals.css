@@ -1,33 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-video{
+  background: url(/assets/hero.mp4);
+  height: 100vh;
+  width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ibg-img{
+  background-image: url('/assets/Navbar-bg-blur.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.gradident{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 99.99%, rgba(255, 255, 255, 0.65) 100%);
 }
+
+.mobile-menu-bg{
+  background-image: url('/assets/mobile-menu-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  width: 100%;
+
+}
+.mobile-menu-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  /* z-index: 1; Ensure the overlay is behind the content */
+}
+
+/* Regular weight */
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('/fonts/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Light weight */
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('/fonts/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 300;  
+  font-style: normal;
+}
+
+/* block weight */
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('/fonts/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: 700;  
+  font-style: normal;
+}
+
+
