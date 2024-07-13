@@ -15,9 +15,9 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className="absolute top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm">
         <div className="flex w-full justify-between items-center my-auto h-full">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src="/assets/Logo.svg" alt="Logo" width={200} height={31} />
-          </div>
+          </Link>
           <div className="hidden xlg:flex items-center">
             <ul className="flex">
               <li>
