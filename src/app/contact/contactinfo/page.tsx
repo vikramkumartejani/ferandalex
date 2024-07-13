@@ -26,7 +26,7 @@ const Contact = () => {
           alt="contact-img"
         />
       </div>
-      <div className="flex lg:flex-row flex-col md:items-center relative lg:ps-[50px] md:ps-0 ps-[50px] z-[2] lg:pt-[138px] pt-[200px] pb-[178px]">
+      <div className="flex lg:flex-row flex-col md:items-center relative lg:ps-[50px] md:ps-0 ps-[50px] z-[2] pt-[200px] pb-[178px]">
         <form
           onSubmit={handleSubmit}
           className="w-2/3 flex flex-col justify-center text-white"
@@ -43,7 +43,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  className="shadow appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -75,7 +75,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="company"
-                  className="shadow appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                 />
@@ -90,7 +90,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="jobFunction"
-                  className="shadow appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none h-[73px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={jobFunction}
                   onChange={(e) => setJobFunction(e.target.value)}
                 />
@@ -106,7 +106,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="description"
-                  className="shadow appearance-none border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] h-[251px] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] h-[251px] w-full py-[20px] px-[30px] leading-tight focus:outline-none focus:shadow-outline"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                 ></textarea>
@@ -116,8 +116,8 @@ const Contact = () => {
         </form>
         <div className="flex items-center justify-center mx-auto lg:py-0 py-[40px]">
           <Link
-            href="/contact"
-            className="text-[70px] font-[400] leading-[69.02px] text-white"
+            href="/contact/thankyou"
+            className="text-[70px] font-[400] leading-[69.02px] text-white backdrop-blur-sm"
           >
             Trimite
           </Link>

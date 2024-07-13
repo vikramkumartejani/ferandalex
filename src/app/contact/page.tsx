@@ -3,26 +3,28 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex items-center bg-[#000000] min-h-screen relative">
-      <h1 className="z-[999] text-white text-[121px] font-[400] leading-[119.31px]">
+    <div className="flex items-center bg-[#000000] h-screen overflow-x-hidden relative">
+      <h1 className="absolute top-1/2 lg:left-[26px] md:left-[30px] left-[40px] z-[2] text-white text-[121px] font-[400] leading-[119.31px] pe-[30px]">
         Hai sa construim impreuna
       </h1>
-      <div className="absolute w-full flex items-center justify-end py-[30px] relative">
-        <div className="absolute w-full">
+      <div className="w-full h-screen flex items-center justify-end relative">
+        <div className="w-fit h-screen">
           <img
-            height={1249}
-            width={833}
-            className="object-cover"
+            height={1270}
+            width={780}
+            className="object-cover p-[30px]"
             src="/assets/contact-img.svg"
             alt="contact-img"
           />
-          <Link
-            href="/contact/contactinfo"
-            className="absolute top-1/2 left-[28%] mt-[130px] px-[20px] py-[20px] transform -translate-x-1/2 -translate-y-1/2 text-white text-[40px] border-2 border-[#FFFFFF1A] font-[400] leading-[49.2px] bg-[#FFFFFF52] rounded-[70px]"
-            style={{ zIndex: 10 }}
-          >
-            Completeaza formular
-          </Link>
+          <div className="w-full absolute 2xl:top-[79%] xl:top-[80%] lg:top-[103%] top-[114%] ms-[45px] mx-auto flex items-start justify-start  me-auto transform -translate-y-1/2">
+            <Link
+              href="/contact/contactinfo"
+              className="font-clashdisplay-regular p-[20px] text-white text-[40px] border-2 border-[#FFFFFF1A] font-[400] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
+              style={{ zIndex: 10 }}
+            >
+              Completeaza formular
+            </Link>
+          </div>
         </div>
       </div>
     </div>
