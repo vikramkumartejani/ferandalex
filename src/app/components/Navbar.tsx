@@ -22,7 +22,7 @@ const Navbar = () => {
             <ul className="flex">
               <li>
                 <Link
-                  href="/"
+                  href="/about"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
                 >
                   Despre noi
@@ -30,7 +30,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/service"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
                 >
                   Servicii
@@ -89,7 +89,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/about"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                   >
                     Despre noi
@@ -97,7 +97,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/service"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                   >
                     Servicii
@@ -105,7 +105,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/contact"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                   >
                     Contact

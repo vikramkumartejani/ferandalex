@@ -49,9 +49,14 @@ const page = () => {
           className="absolute top-0 left-0"
         />
         <img src="/assets/service-bg.jpg" alt="" />
-        <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
+        <img
+          src="/assets/SERVICII.svg"
+          alt=""
+          className=" absolute top-[60%] lg:top-2/3 ml-[5%] w-24 h-auto lg:w-auto uppercase"
+        />
+        {/* <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
           SERVICII
-        </h1>
+        </h1> */}
       </section>
 
       <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white ">
@@ -88,9 +93,14 @@ const page = () => {
                 alt="Service Background"
                 className="object-cover w-full h-full"
               />
-              <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
+              <img
+                src="/assets/interior-design.svg"
+                alt=""
+                className="absolute top-[15%] right-0"
+              />
+              {/* <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
                 INTERIOR <br /> <span className="gradient-text">DESIGN</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="relative  lg:hidden h-[500px]  overflow-hidden">
@@ -99,9 +109,14 @@ const page = () => {
                 alt="Service Background"
                 className="object-cover w-full h-full"
               />
-              <div className="absolute top-[15%] leading-[50px] font-extrabold right-0 h-[50%] text-[60px] text-start ">
+              <img
+                src="/assets/interior-design.svg"
+                alt=""
+                className="absolute top-[15%] right-0 w-[90%] h-auto"
+              />
+              {/* <div className="absolute top-[15%] leading-[50px] font-extrabold right-0 h-[50%] text-[60px] text-start ">
                 INTERIOR <br /> <span className="gradient-text">DESIGN</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <p className="px-[10%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] py-[12%]">
@@ -131,9 +146,14 @@ const page = () => {
                 alt="Service Background"
                 className="object-cover w-full h-full"
               />
-              <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
+              <img
+                src="/assets/CLEANING.svg"
+                alt=""
+                className="absolute top-[15%] right-0"
+              />
+              {/* <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
                 CLEANING
-              </div>
+              </div> */}
               <div className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex items-center justify-center text-[30px] leading-[37px] text-start backdrop-blur-sm">
                 Pasiunea noastra pentru curatenie se traduce in spatii
                 impecabile si confortabile pentru dumneavoastra. Echipa noastra
@@ -156,9 +176,14 @@ const page = () => {
                 alt="Service Background"
                 className="object-cover w-full h-full"
               />
-              <div className="absolute top-[15%] leading-[60px] font-extrabold right-0 h-[50%] text-[55px] text-start ">
+              <img
+                src="/assets/CLEANING.svg"
+                alt=""
+                className="absolute top-[15%] w-[90%] h-auto right-0"
+              />
+              {/* <div className="absolute top-[15%] leading-[60px] font-extrabold right-0 h-[50%] text-[55px] text-start ">
                 CLEANING
-              </div>
+              </div> */}
               <div className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex  items-center justify-center text-[15px] leading-[20px] text-start backdrop-blur-sm">
                 Pasiunea noastra pentru curatenie se traduce in spatii
                 impecabile si confortabile pentru dumneavoastra. Echipa noastra
@@ -180,9 +205,16 @@ const page = () => {
 
       <section className="border-t border-white max-h-[1400px] overflow-hidden">
         <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
-          <h1 className="gradient-text text-[70px] lg:text-[180px] leading-[180px] font-extrabold flex justify-end">
+          <div className="flex py-[2%] pt-[9%] justify-end items-end">
+            <img
+              src="/assets/GALLERY.svg"
+              alt=""
+              className="w-[90%] lg:w-auto"
+            />
+          </div>
+          {/* <h1 className="gradient-text text-[70px] lg:text-[180px] leading-[180px] font-extrabold flex justify-end">
             GALLERY
-          </h1>
+          </h1> */}
 
           {/* Slick slider */}
           <div className="flex flex-col justify-center w-full mx-auto ">
