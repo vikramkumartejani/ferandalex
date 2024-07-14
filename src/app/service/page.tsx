@@ -44,11 +44,11 @@ const page = () => {
     <div className="text-white font-clashdisplay-regular">
       <section className="relative">
         <img
-          src="/assets/section-shape.png"
+          src="/assets/section-shape2.png"
           alt=""
           className="absolute top-0 left-0"
         />
-        <img src="/assets/about-section-bg.jpeg" alt="" />
+        <img src="/assets/service-bg.jpg" alt="" />
         <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
           SERVICII
         </h1>
