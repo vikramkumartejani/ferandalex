@@ -10,9 +10,14 @@ const page = () => {
           className="absolute top-0 left-0"
         />
         <img src="/assets/about-section-bg.jpeg" alt="" />
-        <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
+        <img
+          src="/assets/DESPRE NOI.svg"
+          alt=""
+          className=" absolute top-[60%] lg:top-2/3 ml-[5%] w-[60%] lg:w-auto"
+        />
+        {/* <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
           DESPRE NOI: <br /> de la planuri la realitate
-        </h1>
+        </h1> */}
       </section>
 
       <section className="grid  md:grid-cols-2 lg:pt-[200px] items-center justify-center gap-[80px]  px-[5%] lg:px-0 lg:pl-[5%] max-h-[850px] py-[5%]">
@@ -69,9 +74,14 @@ const page = () => {
             className="w-full h-auto"
             style={{ height: "auto" }}
           />
-          <h1 className="text-[60px] lg:text-[220px] xl:text-[280px] text-start 3xl:text-[320px] leading-none lg:leading-[220px] font-extrabold absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+          <img
+            src="/assets/family.svg"
+            alt=""
+            className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+          />
+          {/* <h1 className="text-[60px] lg:text-[220px] xl:text-[280px] text-start 3xl:text-[320px] leading-none lg:leading-[220px] font-extrabold absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
             WE ARE A <span className="text-[#CCE716]">FAMILY</span>
-          </h1>
+          </h1> */}
         </div>
 
         <h2 className="text-[40px] lg:text-[100px] leading-[50px] lg:leading-[123px] text-center">
