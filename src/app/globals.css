@@ -92,3 +92,28 @@
   background-clip: text; /* Standard syntax */
   color: transparent; /* For non-WebKit browsers */
 }
+
+@media screen and (min-width: 1024px) {
+  .vision-large {
+    display: flex !important;
+  }
+
+  .vision-small {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .vision-large {
+    display: none;
+  }
+  .vision-small {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .vision-large {
+    display: none;
+  }
+}
