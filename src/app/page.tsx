@@ -5,6 +5,7 @@ import SolutionsForAnyProject from "./components/SolutionsForAnyProject";
 import WhatWeOffer from "./components/WhatWeOffer";
 import OurVision from "./components/OurVision";
 import Corporate from "./components/Corporate";
+import CustomerOpinion from "./components/CustomerOpinion";
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
       <OurVision />
       <Corporate />
       <WhatWeOffer />
+      <CustomerOpinion />
       <Footer />
     </>
   );
