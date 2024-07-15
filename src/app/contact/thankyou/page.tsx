@@ -23,7 +23,6 @@ const ThankYou = () => {
             <Link
               href="/contact"
               className="font-clashdisplay-regular md:px-[40px] sm:px-[30px] px-[20px] md:py-[20px] sm:py-[15px] py-[10px] text-white md:text-[40px] sm:text-[34px] text-[28px] border-2 border-[#FFFFFF1A] font-[400] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out"
-              style={{ zIndex: 10 }}
             >
               Go Home
             </Link>

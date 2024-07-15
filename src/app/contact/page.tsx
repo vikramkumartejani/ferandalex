@@ -16,7 +16,21 @@ const Contact = () => {
             src="/assets/contact-img.svg"
             alt="contact-img"
           />
-          <div className="w-full absolute 2xl:top-[79%] xl:top-[80%] lg:top-[103%] md:top-[100%] sm:top-[65%] top-[56%] ms-[45px] mx-auto flex items-start justify-start  me-auto transform -translate-y-1/2">
+          <div className="w-full absolute flex-col gap-5 2xl:top-[79%] xl:top-[80%] lg:top-[103%] md:top-[100%] sm:top-[65%] top-[60%] ms-[45px] mx-auto flex items-start justify-start  me-auto transform -translate-y-1/2">
+            <Link
+              href="/contact/contactinfo"
+              className="font-clashdisplay-regular md:p-[20px] sm:p-[15px] p-[10px] text-white lg:text-[40px] md:text-[35px] sm:text-[24px] text-[19px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
+              style={{ zIndex: 10 }}
+            >
+              Completeaza formular
+            </Link>
+            <Link
+              href="/contact/contactinfo"
+              className="font-clashdisplay-regular md:p-[20px] sm:p-[15px] p-[10px] text-white lg:text-[40px] md:text-[35px] sm:text-[24px] text-[19px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
+              style={{ zIndex: 10 }}
+            >
+              Completeaza formular
+            </Link>
             <Link
               href="/contact/contactinfo"
               className="font-clashdisplay-regular md:p-[20px] sm:p-[15px] p-[10px] text-white lg:text-[40px] md:text-[35px] sm:text-[24px] text-[19px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"

@@ -26,14 +26,14 @@ const Contact = () => {
           alt="contact-img"
         />
       </div>
-      <div className="flex lg:flex-row flex-col md:items-center relative lg:ps-[50px] md:ps-0 sm:ps-[50px] ps-[25px] z-[2] pt-[200px] pb-[178px]">
+      <div className="px-10 flex lg:flex-row flex-col items-start lg:items-center relative lg:ps-[50px] md:ps-0 sm:ps-[50px] ps-[25px] z-[2] pt-[200px] pb-[178px]">
         <form
           onSubmit={handleSubmit}
           className="lg:w-2/3 sm:w-[90%] w-[95%] flex flex-col justify-center text-white"
         >
           <div className="flex flex-col md:gap-[91px] gap-[50px]">
             <div className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]">
-              <div className="flex flex-col flex-1 md:gap-[26px] gap-[10px]">
+              <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="name"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -48,7 +48,7 @@ const Contact = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="flex flex-col flex-1 md:gap-[26px] gap-[10px]">
+              <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="phone"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]">
-              <div className="flex flex-col flex-1 md:gap-[26px] gap-[10px]">
+              <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="company"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -80,7 +80,7 @@ const Contact = () => {
                   onChange={(e) => setCompany(e.target.value)}
                 />
               </div>
-              <div className="flex flex-col flex-1 md:gap-[26px] gap-[10px]">
+              <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="jobFunction"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -97,7 +97,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-grow">
-              <div className="flex flex-col  md:gap-[26px] gap-[10px] flex-grow">
+              <div className="flex flex-col  md:gap-[26px] gap-[20px] flex-grow">
                 <label
                   htmlFor="description"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -106,7 +106,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="description"
-                  className="shadow backdrop-blur-sm appearance-none border-2 border-[#FFFFFF1A] sm:rounded-[70px] rounded-[20px] bg-[#FFFFFF4D] sm:h-[251px] h-[230px] w-full py-[20px] px-[30px] leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow resize-none backdrop-blur-sm appearance-none border-2 border-[#FFFFFF1A] sm:rounded-[70px] rounded-[20px] bg-[#FFFFFF4D] sm:h-[251px] h-[230px] w-full py-[20px] px-[30px] leading-tight focus:outline-none focus:shadow-outline"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                 ></textarea>
@@ -114,7 +114,7 @@ const Contact = () => {
             </div>
           </div>
         </form>
-        <div className="flex items-center justify-center mx-auto lg:py-0 py-[40px]">
+        <div className="lg:flex items-center justify-center lg:mx-auto lg:py-0 py-[40px]">
           <Link
             href="/contact/thankyou"
             className="md:text-[70px] text-[50px] font-[400] leading-[69.02px] text-white backdrop-blur-sm"
