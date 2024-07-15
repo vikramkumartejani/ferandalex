@@ -64,7 +64,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 left-0 right-0 bottom-0 h-[100vh] z-100 mobile-menu-bg  text-white p-5 md:px-14 md:py-10">
+          <div className="fixed top-0 left-0 right-0 bottom-0 min-h-[100vh] z-50 mobile-menu-bg  text-white p-5 md:px-14 md:py-10">
             <div className="flex justify-end">
               <button onClick={toggleMobileMenu}>
                 <Image
