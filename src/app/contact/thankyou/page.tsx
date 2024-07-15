@@ -1,23 +1,48 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import "aos/dist/aos.css"; // Import AOS styles if needed
+import AOS from "aos"; // Import AOS
 
 const ThankYou = () => {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations
+      easing: "ease-in-out", // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="flex items-center bg-[#000000] h-screen overflow-x-hidden relative">
       <div className="w-full h-screen flex items-center justify-end relative">
         <div className="w-full h-screen">
           <img
+            data-aos="fade-in" // AOS animation
+            data-aos-delay="300" // Delay before the animation starts
             height={"100%"}
             width={"100%"}
             className="object-cover md:p-[30px] sm:p-[20px] p-[10px] h-[1172px] w-full"
             src="/assets/contact-img2.svg"
             alt="contact-img"
           />
-          <div className="w-full absolute top-1/2 flex flex-col  items-center justify-center sm:gap-[30px] gap-[18px] px-[30px]">
-            <h1 className="max-w-[800px] text-center justify-center text-white md:text-[121px] sm:text-[89px] text-[40px] font-[400] md:leading-[119.31px] sm:leading-[100px] leading-[50px]">
+          <div
+            data-aos="fade-up" // AOS animation
+            data-aos-delay="500" // Delay before the animation starts
+            className="w-full absolute top-1/2 flex flex-col items-center justify-center sm:gap-[30px] gap-[18px] px-[30px]"
+          >
+            <h1
+              data-aos="zoom-in" // AOS animation
+              data-aos-delay="700" // Delay before the animation starts
+              className="max-w-[800px] text-center justify-center text-white md:text-[121px] sm:text-[89px] text-[40px] font-[400] md:leading-[119.31px] sm:leading-[100px] leading-[50px]"
+            >
               Iti multumim pentru interes!
             </h1>
-            <p className="text-white md:text-[40px] sm:text-[30px] text-[20px] leading-[49.2px] font-[400] font-clashdisplay-regular">
+            <p
+              data-aos="zoom-in" // AOS animation
+              data-aos-delay="900" // Delay before the animation starts
+              className="text-white md:text-[40px] sm:text-[30px] text-[20px] leading-[49.2px] font-[400] font-clashdisplay-regular"
+            >
               Te vom contacta in curand.
             </p>
             <Link

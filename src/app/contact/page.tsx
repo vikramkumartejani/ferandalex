@@ -1,14 +1,34 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; // Import AOS
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations
+      easing: "ease-in-out", // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="flex items-center bg-[#000000] h-screen overflow-x-hidden relative">
-      <h1 className="absolute md:top-1/2 sm:top-[30%] top-[35%] lg:left-[26px] md:left-[30px] left-[40px] z-[2] text-white lg:text-[120px] md:text-[92px] sm:text-[70px] text-[30px] font-[400] md:leading-[119.31px] sm:leading-[80px] leading-[40px] pe-[30px]">
+      <h1
+        data-aos="fade-right"
+        data-aos-delay="700"
+        className="absolute md:top-1/2 sm:top-[30%] top-[35%] lg:left-[26px] md:left-[30px] left-[40px] z-[2] text-white lg:text-[120px] md:text-[92px] sm:text-[70px] text-[30px] font-[400] md:leading-[119.31px] sm:leading-[80px] leading-[40px] pe-[30px]"
+      >
         Hai sa construim impreuna
       </h1>
       <div className="w-full h-screen flex items-center justify-end relative">
-        <div className="w-fit h-screen">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="1200"
+          className="w-fit h-screen"
+        >
           <img
             height={1270}
             width={780}

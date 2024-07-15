@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; // Import AOS
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -15,10 +17,20 @@ const Contact = () => {
     console.log(name, company, phone, jobFunction, description);
   };
 
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations
+      easing: "ease-in-out", // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="bg-[#000000] h-full relative">
-      <div className="absolute h-full w-full z-[1] ">
+      <div className="absolute h-full w-full z-[1]">
         <img
+          data-aos="fade-in" // AOS animation
+          data-aos-delay="300" // Delay before the animation starts
           height={"100%"}
           width={"100%"}
           className="object-cover h-full w-full lg:p-[30px] md:p-[20px] p-[10px]"
@@ -32,7 +44,11 @@ const Contact = () => {
           className="lg:w-2/3 sm:w-[90%] w-[95%] flex flex-col justify-center text-white"
         >
           <div className="flex flex-col md:gap-[91px] gap-[50px]">
-            <div className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]">
+            <div
+              data-aos="fade-up" // AOS animation
+              data-aos-delay="500" // Delay before the animation starts
+              className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
+            >
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="name"
@@ -64,7 +80,11 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]">
+            <div
+              data-aos="fade-up" // AOS animation
+              data-aos-delay="700" // Delay before the animation starts
+              className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
+            >
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="company"
@@ -96,8 +116,12 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-grow">
-              <div className="flex flex-col  md:gap-[26px] gap-[20px] flex-grow">
+            <div
+              data-aos="fade-up" // AOS animation
+              data-aos-delay="900" // Delay before the animation starts
+              className="flex flex-grow"
+            >
+              <div className="flex flex-col md:gap-[26px] gap-[20px] flex-grow">
                 <label
                   htmlFor="description"
                   className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
@@ -117,6 +141,8 @@ const Contact = () => {
         <div className="lg:flex items-center justify-center lg:mx-auto lg:py-0 py-[40px]">
           <Link
             href="/contact/thankyou"
+            data-aos="fade-up" // AOS animation
+            data-aos-delay="1100" // Delay before the animation starts
             className="md:text-[70px] text-[50px] font-[400] leading-[69.02px] text-white backdrop-blur-sm"
           >
             Trimite
