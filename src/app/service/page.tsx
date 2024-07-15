@@ -33,7 +33,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   );
 };
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -295,4 +295,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

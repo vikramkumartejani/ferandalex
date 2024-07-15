@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -162,4 +162,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
