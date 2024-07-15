@@ -11,12 +11,12 @@ const CustomerOpinion = () => {
     });
   }, []);
 
-  const handleGoToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Optional: smooth scrolling animation
-    });
-  };
+  // const handleGoToTop = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth", // Optional: smooth scrolling animation
+  //   });
+  // };
 
   return (
     <div className="bg-white flex flex-col md:gap-[80px] gap-[10px] md:py-[100px] py-[80px] lg:px-[157px] md:px-[70px] px-[25px] font-clashdisplay-regular">
@@ -39,11 +39,11 @@ const CustomerOpinion = () => {
           Anton Andrei
         </p>
       </span>
-      <div className="flex w-full justify-end ms-auto">
+      {/* <div className="flex w-full justify-end ms-auto">
         <button onClick={handleGoToTop} data-aos="fade-up" data-aos-delay="900">
           <img src="/assets/up-arrow.svg" alt="Go to top" width="68.38px" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

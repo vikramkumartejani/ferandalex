@@ -34,6 +34,12 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
 };
 
 const Page = () => {
+  const handleGoToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: smooth scrolling animation
+    });
+  };
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -290,6 +296,12 @@ const Page = () => {
           {/* End  */}
         </div>
       </section>
+
+      <div className="fixed bottom-5 right-5 lg:bottom-[80px]  lg:right-[80px] flex w-full justify-end ms-auto">
+        <button onClick={handleGoToTop}>
+          <img src="/assets/up-arrow.svg" alt="Go to top" width="68.38px" />
+        </button>
+      </div>
       <Footer />
     </div>
   );
