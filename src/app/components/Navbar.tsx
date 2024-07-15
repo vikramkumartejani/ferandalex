@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -11,46 +13,61 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-auto ">
+    <header className="w-full h-auto">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm">
+      <nav
+        className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm"
+        data-aos="fade-down"
+      >
         <div className="flex w-full justify-between items-center my-auto h-full">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center" aria-label="Homepage">
             <Image src="/assets/Logo.svg" alt="Logo" width={200} height={31} />
           </Link>
           <div className="hidden xlg:flex items-center">
             <ul className="flex">
-              <li>
+              <li data-aos="fade-right">
                 <Link
                   href="/about"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
+                  aria-label="About Us"
                 >
                   Despre noi
                 </Link>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-delay="100">
                 <Link
                   href="/service"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
+                  aria-label="Services"
                 >
                   Servicii
                 </Link>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-delay="200">
                 <Link
                   href="/contact"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
+                  aria-label="Contact Us"
                 >
                   Contact
                 </Link>
               </li>
             </ul>
-            <button className="border-2 border-[#FFFFFF] rounded-[45px] px-8 py-3 text-[30px] leading-[40px] font-clashdisplay-regular">
+            <button
+              className="border-2 border-[#FFFFFF] rounded-[45px] px-8 py-3 text-[30px] leading-[40px] font-clashdisplay-regular"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               Discuta cu noi
             </button>
           </div>
           <div className="xlg:hidden flex">
-            <button onClick={toggleMobileMenu}>
+            <button
+              onClick={toggleMobileMenu}
+              aria-expanded={isMobileMenuOpen}
+              aria-label="Toggle mobile menu"
+              data-aos="fade-in"
+            >
               <Image
                 src="/assets/menu.svg"
                 alt="Menu"
@@ -64,9 +81,17 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed top-0 left-0 right-0 bottom-0 min-h-[100vh] z-50 mobile-menu-bg  text-white p-5 md:px-14 md:py-10">
+          <div
+            className="fixed top-0 left-0 right-0 bottom-0 min-h-[100vh] z-50 mobile-menu-bg text-white p-5 md:px-14 md:py-10"
+            aria-labelledby="mobile-menu"
+            data-aos="fade-in"
+          >
             <div className="flex justify-end">
-              <button onClick={toggleMobileMenu}>
+              <button
+                onClick={toggleMobileMenu}
+                aria-label="Close mobile menu"
+                data-aos="fade-out"
+              >
                 <Image
                   src="/assets/close.svg"
                   alt="Close"
@@ -79,34 +104,38 @@ const Navbar = () => {
 
             <div className="flex flex-col items-center justify-center gap-16 h-full my-auto">
               <ul className="flex flex-col items-center justify-center gap-10">
-                <li>
+                <li data-aos="fade-up">
                   <Link
                     href="/"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
+                    aria-label="Home"
                   >
                     Home
                   </Link>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="100">
                   <Link
                     href="/about"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
+                    aria-label="About Us"
                   >
                     Despre noi
                   </Link>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="200">
                   <Link
                     href="/service"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
+                    aria-label="Services"
                   >
                     Servicii
                   </Link>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="300">
                   <Link
                     href="/contact"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
+                    aria-label="Contact Us"
                   >
                     Contact
                   </Link>

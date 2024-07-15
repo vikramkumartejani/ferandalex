@@ -1,13 +1,30 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <footer className="bg-gradient-to-r from-blue-50 to-pink-50">
       <div className="mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[46px] py-[89px] md:px-[70px] sm:px-[30px] px-[20px] max-w-[1280px] mx-auto sm:text-left text-center">
-          <div className="flex flex-col gap-[25px]">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[46px] py-[89px] md:px-[70px] sm:px-[30px] px-[20px] max-w-[1280px] mx-auto sm:text-left text-center"
+          data-aos="fade-up"
+        >
+          <div
+            className="flex flex-col gap-[25px]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               className="w-[230px] sm:mx-0 mx-auto"
               src="/assets/footer-logo.svg"
@@ -18,7 +35,11 @@ const Footer = () => {
               frequent questions or concerns.
             </p>
           </div>
-          <div className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]">
+          <div
+            className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <h3 className="text-[#071A34] text-[25px] font-[600]">Company</h3>
             <ul className="font-[500] text-[20px] text-[#090914] flex flex-col gap-[16px]">
               <li>
@@ -43,7 +64,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]">
+          <div
+            className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <h3 className="text-[#071A34] text-[25px] font-[600]">Help</h3>
             <ul className="font-[500] text-[20px] text-[#090914] flex flex-col gap-[16px]">
               <li>
@@ -68,7 +93,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]">
+          <div
+            className="font-clashdisplay-regular leading-[24px] flex flex-col gap-[22px]"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             <h3 className="text-[#071A34] text-[25px] font-[600]">
               Newsletter
             </h3>
@@ -84,7 +113,11 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="lg:hidden flex gap-[24px] mx-auto justify-center py-[14px]">
+        <div
+          className="lg:hidden flex gap-[24px] mx-auto justify-center py-[14px]"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
           <a href="#" aria-label="X" className="my-auto">
             <BsTwitterX size={28} />
           </a>
@@ -102,28 +135,41 @@ const Footer = () => {
           </a>
         </div>
         <div className="mx-auto border max-w-[1220px]"></div>
-        <div className="flex justify-between items-center md:pe-[30px] flex-wrap">
+        <div
+          className="flex justify-between items-center md:pe-[30px] flex-wrap"
+          data-aos="fade-up"
+          data-aos-delay="1200"
+        >
           <div className="md:mx-0 mx-auto flex md:justify-start md:w-fit w-full justify-center">
-            <img width={353} height={103} src="/assets/foot-img.svg" alt="Logo" />
+            <img
+              width={353}
+              height={103}
+              src="/assets/foot-img.svg"
+              alt="Logo"
+            />
           </div>
           <p className="text-[#090914] sm:text-[20px] md:mx-0 mx-auto text-[16px] py-6 font-[400] leading-[22px] font-clashdisplay-regular">
             © 2024 FERANDALEX SRL, All rights reserved.
           </p>
-          <div className="lg:flex hidden gap-[24px]">
+          <div
+            className="lg:flex hidden gap-[24px]"
+            data-aos="fade-up"
+            data-aos-delay="1400"
+          >
             <a href="#" aria-label="X" className="my-auto">
               <BsTwitterX size={28} color="#000" />
             </a>
             <a href="#" aria-label="Instagram">
-              <FaInstagram size={30} color="#000"/>
+              <FaInstagram size={30} color="#000" />
             </a>
             <a href="#" aria-label="Facebook">
-              <FaFacebook size={30} color="#000"/>
+              <FaFacebook size={30} color="#000" />
             </a>
             <a href="#" aria-label="LinkedIn">
-              <FaLinkedin size={30} color="#000"/>
+              <FaLinkedin size={30} color="#000" />
             </a>
             <a href="#" aria-label="YouTube">
-              <FaYoutube size={30} color="#000"/>
+              <FaYoutube size={30} color="#000" />
             </a>
           </div>
         </div>

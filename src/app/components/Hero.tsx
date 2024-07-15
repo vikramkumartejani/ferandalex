@@ -1,13 +1,29 @@
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // animation duration in milliseconds
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <div className="relative w-full h-screen">
       {/* Video Background */}
-      <video className="w-full h-screen" autoPlay loop muted>
+      <video
+        data-aos="zoom-out"
+        data-aos-delay="500"
+        className="w-full h-screen"
+        autoPlay
+        loop
+        muted
+      >
         <source src="/assets/hero.mp4" className="h-screen" type="video/mp4" />
       </video>
 
@@ -16,9 +32,21 @@ const Hero: React.FC = () => {
 
       {/* Content on top of video */}
       <div className="absolute inset-0 flex items-center justify-center mt-40">
-        <div className=" text-white flex flex-col gap-5 lg:gap-10  w-full 2xl:px-[100px] lg:px-[50px] px-4 pt-[100px] pb-[40px]">
-          <Image src="/assets/des.svg" alt="title" width={1000} className=" " height={10} />
-          <div className="relative max-w-[300px] flex items-end justify-end w-full">
+        <div className="text-white flex flex-col gap-5 lg:gap-10 w-full 2xl:px-[100px] lg:px-[50px] px-4 pt-[100px] pb-[40px]">
+          <Image
+            src="/assets/des.svg"
+            alt="title"
+            width={1000}
+            className=""
+            height={10}
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          />
+          <div
+            className="relative max-w-[300px] flex items-end justify-end w-full"
+            data-aos="fade-up"
+            data-aos-delay="1300"
+          >
             <Image
               src="/assets/IMPREUNA.svg"
               alt="text"
@@ -35,17 +63,33 @@ const Hero: React.FC = () => {
             />
           </div>
 
-          <div className="w-full flex lg:flex-row flex-col-reverse justify-between mt-10">
-            <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">Hai sa discutam proiectul tau<IoIosArrowRoundForward className="text-3xl lg:text-5xl" /></h1>
+          <div
+            className="w-full flex lg:flex-row flex-col-reverse justify-between mt-10"
+            data-aos="fade-right"
+            data-aos-delay="2000"
+          >
+            <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">
+              Hai sa discutam proiectul tau
+              <IoIosArrowRoundForward className="text-3xl lg:text-5xl" />
+            </h1>
             <div className="flex items-center gap-1">
-              <button className=" font-clashdisplay-regular text-[35px] leading-[49px] ">Play</button>
-              <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">/</span>
-              <button className="lg:block hidden font-clashdisplay-regular text-[35px] leading-[49px] ">Pause</button>
-              <Image src='/assets/Pause.svg' alt="Pasue / Play" width={48} height={54} />
+              <button className="font-clashdisplay-regular text-[35px] leading-[49px]">
+                Play
+              </button>
+              <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">
+                /
+              </span>
+              <button className="lg:block hidden font-clashdisplay-regular text-[35px] leading-[49px]">
+                Pause
+              </button>
+              <Image
+                src="/assets/Pause.svg"
+                alt="Pause / Play"
+                width={48}
+                height={54}
+              />
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
