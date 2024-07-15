@@ -16,9 +16,16 @@ const Hero: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       {/* Video Background */}
-      <video className="w-full h-screen" autoPlay loop muted>
-        <source src="/assets/hero.mp4" className="h-screen" type="video/mp4" />
-      </video>
+
+      <div className="w-full h-screen lg:h-auto overflow-hidden">
+        <video className="w-full h-full object-cover" autoPlay loop muted>
+          <source
+            src="/assets/hero.mp4"
+            className="h-screen"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
       {/* Overlay for video */}
       <div className="gradident absolute inset-0 h-screen" />
