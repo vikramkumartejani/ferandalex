@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header className="w-full h-auto ">
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm">
         <div className="flex w-full justify-between items-center my-auto h-full">
           <Link href="/" className="flex items-center">
             <Image src="/assets/Logo.svg" alt="Logo" width={200} height={31} />
