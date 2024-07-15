@@ -25,7 +25,7 @@ const Navbar = () => {
           </Link>
           <div className="hidden xlg:flex items-center">
             <ul className="flex">
-              <li data-aos="fade-right">
+              <li data-aos="fade-up">
                 <Link
                   href="/about"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
@@ -34,7 +34,7 @@ const Navbar = () => {
                   Despre noi
                 </Link>
               </li>
-              <li data-aos="fade-right" data-aos-delay="100">
+              <li data-aos="fade-up" data-aos-delay="100">
                 <Link
                   href="/service"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
@@ -43,7 +43,7 @@ const Navbar = () => {
                   Servicii
                 </Link>
               </li>
-              <li data-aos="fade-right" data-aos-delay="200">
+              <li data-aos="fade-up" data-aos-delay="200">
                 <Link
                   href="/contact"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
@@ -55,7 +55,7 @@ const Navbar = () => {
             </ul>
             <button
               className="border-2 border-[#FFFFFF] rounded-[45px] px-8 py-3 text-[30px] leading-[40px] font-clashdisplay-regular"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="300"
             >
               Discuta cu noi

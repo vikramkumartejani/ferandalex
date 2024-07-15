@@ -33,7 +33,7 @@ const Page = () => {
 
       <section
         className="grid md:grid-cols-2 lg:pt-[200px] items-center justify-center gap-[80px] px-[5%] lg:px-0 lg:pl-[5%] max-h-[850px] py-[5%]"
-        data-aos="fade-right"
+        data-aos="fade-up"
       >
         <div>
           <h3
@@ -55,7 +55,7 @@ const Page = () => {
 
         <div
           className="hidden lg:block px-0 h-full w-full lg:rounded-l-[77px] overflow-hidden"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           <img
             src="/assets/about-section-bg1.jpeg"
@@ -65,7 +65,7 @@ const Page = () => {
 
         <div
           className="lg:hidden w-[90%] h-full rounded-[50px] mx-auto overflow-hidden"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="200"
         >
           <img

@@ -14,7 +14,7 @@ const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
     <div
       className="absolute top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
       onClick={onClick}
-      data-aos="fade-left"
+      data-aos="fade-up"
     >
       Next
     </div>
@@ -26,7 +26,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
     <div
       className="absolute top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
       onClick={onClick}
-      data-aos="fade-right"
+      data-aos="fade-up"
     >
       Previous
     </div>
@@ -96,7 +96,7 @@ const Page = () => {
           </div>
         </div>
         <p
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="px-[5%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px]"
         >
           Ferandalex ofera servicii complete de constructii, de la planificare
@@ -125,7 +125,7 @@ const Page = () => {
               <img
                 src="/assets/interior-design.svg"
                 alt=""
-                data-aos="fade-left"
+                data-aos="fade-up"
                 className="absolute top-[15%] right-0"
               />
             </div>
@@ -183,7 +183,7 @@ const Page = () => {
               <img
                 src="/assets/CLEANING.svg"
                 alt=""
-                data-aos="fade-right"
+                data-aos="fade-up"
                 className="absolute top-[15%] right-0"
               />
               <div
@@ -215,7 +215,7 @@ const Page = () => {
                 className="object-cover w-full h-full"
               />
               <img
-                src="/assets/CLEANING.svg"
+                src="/assets/cleaning.svg"
                 alt=""
                 className="absolute top-[15%] w-[90%] h-auto right-0"
               />

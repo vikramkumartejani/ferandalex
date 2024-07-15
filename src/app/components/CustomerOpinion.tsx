@@ -29,7 +29,7 @@ const CustomerOpinion = () => {
       </h2>
       <span
         className="flex flex-col font-[400] text-black max-w-[780px] md:items-center items-start md:justify-center justify-start"
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="600"
       >
         <h3 className="md:text-[64px] text-[25px] md:leading-[86.24px] leading-[32px] tracking-[9%]">

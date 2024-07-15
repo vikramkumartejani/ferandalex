@@ -110,14 +110,14 @@ const WhatWeOffer = () => {
       <div className="mt-[80px] flex justify-center items-start flex-col mx-auto gap-[15px] max-w-[1000px] w-full">
         <h2
           className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-delay="1100"
         >
           CONSTRUCTII
         </h2>
         <p
           className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="1400"
         >
           Transformam viziunea in realitate. Oferim servicii complete de

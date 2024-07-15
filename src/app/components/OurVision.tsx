@@ -27,7 +27,7 @@ const OurVision: React.FC = () => {
       >
         <div
           className="flex flex-col gap-[60px] lg:ps-[81px] md:ps-[80px] ps-[25px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[200px] py-[50px] w-full lg:w-[60%]"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-delay="1000"
         >
           <p>
@@ -46,7 +46,7 @@ const OurVision: React.FC = () => {
 
         <div
           className="relative me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="1200"
         >
           <div className="absolute z-[999] lg:top-[14%] lg:right-0 w-[820px]">
@@ -77,7 +77,7 @@ const OurVision: React.FC = () => {
 
         <div
           className="relative me-auto md:h-[1268px] h-[600px] w-full lg:w-1/2 lg:order-2 order-1 vision-small"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="2000"
         >
           <div className="absolute z-[999] lg:top-[14%] top-[35%] lg:right-0 lg:w-[820px] md:w-[740px] sm:w-[600px] w-[300px] mx-auto left-1/2 transform -translate-x-1/2">

@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
 
           <div
             className="w-full flex lg:flex-row flex-col-reverse justify-between mt-10"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="2000"
           >
             <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">

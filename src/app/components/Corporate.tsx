@@ -28,7 +28,7 @@ const Corporate: React.FC = () => {
         >
           <div
             className="relative flex me-auto md:h-[1268px] w-full lg:w-1/2 lg:order-1 order-2"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="1000"
           >
             <div className="absolute z-2 md:top-[14%] sm:top-[14%] top-[13%] lg:left-[30%] left-2 w-[820px]">
@@ -61,7 +61,7 @@ const Corporate: React.FC = () => {
           </div>
           <div
             className="flex flex-col gap-[60px] lg:px-[30px] md:px-[81px] sm:px-[25px] px-[20px] lg:pt-[120px] md:pt-[80px] pt-[40px] lg:pb-[100px] pb-0 w-full lg:w-[60%] lg:order-2 order-1"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="1800"
           >
             <p>

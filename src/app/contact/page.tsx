@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div className="flex items-center bg-[#000000] h-screen overflow-x-hidden relative">
       <h1
-        data-aos="fade-right"
+        data-aos="fade-up"
         data-aos-delay="700"
         className="absolute md:top-1/2 sm:top-[30%] top-[35%] lg:left-[26px] md:left-[30px] left-[40px] z-[2] text-white lg:text-[120px] md:text-[92px] sm:text-[70px] text-[30px] font-[400] md:leading-[119.31px] sm:leading-[80px] leading-[40px] pe-[30px]"
       >
@@ -25,7 +25,7 @@ const Contact = () => {
       </h1>
       <div className="w-full h-screen flex items-center justify-end relative">
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="1200"
           className="w-fit h-screen"
         >
