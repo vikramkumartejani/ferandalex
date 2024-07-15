@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
@@ -33,7 +34,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
 };
 
 const page = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
