@@ -4,7 +4,7 @@ const Corporate = () => {
   return (
     <div className="bg-[#F26A45]">
       <div className="overflow-x-hidden">
-        <h2 className="md:pt-[160px] pt-[100px] lg:ps-[120px] lg:pe-0 md:px-[81px] sm:px-[25px] px-[20px] text-[#F26A45] md:text-[64px] text-[43px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular">
+        <h2 className=" font-clashdisplay-bold md:pt-[160px] pt-[100px] lg:ps-[120px] lg:pe-0 md:px-[81px] sm:px-[25px] px-[20px] text-white md:text-[64px] text-[43px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[0.09em]">
           CORPORATE
         </h2>
         <div className="flex lg:flex-row flex-col  items-end justify-between mb-auto h-full md:text-[30px] text-[24px] text-[#EFE8E9] font-[400] leading-[40.42px] tracking-[9%] font-clashdisplay-regular">

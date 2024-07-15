@@ -1,19 +1,24 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
     <div className="text-white font-clashdisplay-regular">
-      <section className="relative">
+      <section className="relative h-[400px] md:h-full w-full">
         <img
           src="/assets/section-shape.png"
           alt=""
-          className="absolute top-0 left-0"
+          className="absolute top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
         />
-        <img src="/assets/about-section-bg.jpeg" alt="" />
         <img
-          src="/assets/DESPRE NOI.svg"
+          src="/assets/about-section-bg.jpeg"
           alt=""
-          className=" absolute top-[60%] lg:top-2/3 ml-[5%] w-[60%] lg:w-auto"
+          className="h-[400px] md:h-full w-full"
+        />
+        <img
+          src="/assets/DESPRE NOI.svg "
+          alt=""
+          className=" absolute top-[60%] lg:top-2/3 ml-[5%] w-[60%] lg:w-auto  "
         />
         {/* <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
           DESPRE NOI: <br /> de la planuri la realitate
@@ -110,6 +115,7 @@ const page = () => {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

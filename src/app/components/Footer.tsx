@@ -111,19 +111,19 @@ const Footer = () => {
           </p>
           <div className="lg:flex hidden gap-[24px]">
             <a href="#" aria-label="X" className="my-auto">
-              <BsTwitterX size={28} />
+              <BsTwitterX size={28} color="#000" />
             </a>
             <a href="#" aria-label="Instagram">
-              <FaInstagram size={30} />
+              <FaInstagram size={30} color="#000"/>
             </a>
             <a href="#" aria-label="Facebook">
-              <FaFacebook size={30} />
+              <FaFacebook size={30} color="#000"/>
             </a>
             <a href="#" aria-label="LinkedIn">
-              <FaLinkedin size={30} />
+              <FaLinkedin size={30} color="#000"/>
             </a>
             <a href="#" aria-label="YouTube">
-              <FaYoutube size={30} />
+              <FaYoutube size={30} color="#000"/>
             </a>
           </div>
         </div>

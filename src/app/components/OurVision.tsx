@@ -3,7 +3,7 @@ import React from "react";
 const OurVision = () => {
   return (
     <div className="overflow-x-hidden">
-      <h2 className="text-white pt-[160px] lg:px-[120px] md:px-[80px] px-[25px] text-[#F26A45] md:text-[64px] text-[43px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular">
+      <h2 className="pt-[50px] md:pt-[160px] lg:px-[120px] md:px-[80px] px-[25px] text-[#F26A45] md:text-[64px] text-[35px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular">
         Viziunea noastra
       </h2>
       <div className="flex lg:flex-row flex-col lg:order-1 order-2 items-end justify-between mb-auto h-full text-[#EFE8E9] md:text-[30px] text-[22px] font-[400] leading-[40.42px] tracking-[9%] font-clashdisplay-regular">

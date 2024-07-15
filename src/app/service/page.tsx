@@ -4,6 +4,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "../components/Footer";
 
 const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
@@ -42,13 +43,13 @@ const page = () => {
 
   return (
     <div className="text-white font-clashdisplay-regular">
-      <section className="relative">
-        <img
+      <section className="relative h-[400px] md:h-full w-full">
+       <img
           src="/assets/section-shape2.png"
           alt=""
-          className="absolute top-0 left-0"
+          className="absolute top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
         />
-        <img src="/assets/service-bg.jpg" alt="" />
+        <img src="/assets/service-bg.jpg" alt="" className="h-[400px] md:h-full w-full" />
         <img
           src="/assets/SERVICII.svg"
           alt=""
@@ -72,7 +73,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <p className="px-[10%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] ">
+        <p className="px-[5%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] ">
           Ferandalex ofera servicii complete de constructii, de la planificare
           si proiectare la executie si finisare. Echipa noastra de specialisti
           cu vasta experienta se ocupa de toate etapele procesului de
@@ -205,7 +206,7 @@ const page = () => {
 
       <section className="border-t border-white max-h-[1400px] overflow-hidden">
         <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
-          <div className="flex py-[2%] pt-[9%] justify-end items-end">
+          <div className="flex py-[2%] pt-[4%] justify-end items-end">
             <img
               src="/assets/GALLERY.svg"
               alt=""
@@ -221,9 +222,9 @@ const page = () => {
             <Slider {...settings}>
               <div>
                 <Image
-                  src="/assets/service-section-carousel-img.jpeg"
+                  src="/assets/service-section-carousel-img.svg"
                   alt="Slide 1"
-                  width={1000}
+                  width={600}
                   height={600}
                   className="  w-full h-auto"
                 />
@@ -231,9 +232,9 @@ const page = () => {
 
               <div>
                 <Image
-                  src="/assets/service-section-carousel-img.jpeg"
+                  src="/assets/service-section-carousel-img.svg"
                   alt="Slide 1"
-                  width={1000}
+                  width={600}
                   height={600}
                   className="  w-full h-auto"
                 />
@@ -241,9 +242,9 @@ const page = () => {
 
               <div>
                 <Image
-                  src="/assets/service-section-carousel-img.jpeg"
+                  src="/assets/service-section-carousel-img.svg"
                   alt="Slide 1"
-                  width={1000}
+                  width={600}
                   height={600}
                   className="  w-full h-auto"
                 />
@@ -253,6 +254,7 @@ const page = () => {
           {/* End  */}
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
