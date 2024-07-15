@@ -135,11 +135,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="mx-auto border max-w-[1220px]"></div>
-        <div
-          className="flex justify-between items-center md:pe-[30px] flex-wrap"
-          data-aos="fade-up"
-          data-aos-delay="1200"
-        >
+        <div className="flex justify-between items-center md:pe-[30px] flex-wrap">
           <div className="md:mx-0 mx-auto flex md:justify-start md:w-fit w-full justify-center">
             <img
               width={353}
@@ -151,11 +147,7 @@ const Footer = () => {
           <p className="text-[#090914] sm:text-[20px] md:mx-0 mx-auto text-[16px] py-6 font-[400] leading-[22px] font-clashdisplay-regular">
             © 2024 FERANDALEX SRL, All rights reserved.
           </p>
-          <div
-            className="lg:flex hidden gap-[24px]"
-            data-aos="fade-up"
-            data-aos-delay="1400"
-          >
+          <div className="lg:flex hidden gap-[24px]">
             <a href="#" aria-label="X" className="my-auto">
               <BsTwitterX size={28} color="#000" />
             </a>

@@ -16,14 +16,7 @@ const Hero: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       {/* Video Background */}
-      <video
-        data-aos="zoom-out"
-        data-aos-delay="500"
-        className="w-full h-screen"
-        autoPlay
-        loop
-        muted
-      >
+      <video className="w-full h-screen" autoPlay loop muted>
         <source src="/assets/hero.mp4" className="h-screen" type="video/mp4" />
       </video>
 
