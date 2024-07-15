@@ -42,7 +42,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
 const WhatWeOffer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: true,
     });
   }, []);

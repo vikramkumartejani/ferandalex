@@ -8,10 +8,18 @@ import "aos/dist/aos.css";
 const Hero: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // animation duration in milliseconds
+      duration: 800, // animation duration in milliseconds
       once: true, // whether animation should happen only once - while scrolling down
     });
   }, []);
+
+
+  const handleGoToTop = () => {
+    window.scrollTo({
+      bottom: 0,
+      behavior: "smooth", // Optional: smooth scrolling animation
+    });
+  };
 
   return (
     <div className="relative w-full h-screen">
@@ -32,7 +40,7 @@ const Hero: React.FC = () => {
 
       {/* Content on top of video */}
       <div className="absolute inset-0 flex items-center justify-center mt-40">
-        <div className="text-white flex flex-col gap-5 lg:gap-10 w-full 2xl:px-[100px] lg:px-[50px] px-4 pt-[100px] pb-[40px]">
+        <div className="text-white flex flex-col gap-5 lg:gap-10 w-full 2xl:px-[100px] lg:px-[50px] px-4 pt-[100px] pb-[100px]">
           <Image
             src="/assets/des.svg"
             alt="title"
@@ -40,33 +48,45 @@ const Hero: React.FC = () => {
             className=""
             height={10}
             data-aos="fade-up"
-            data-aos-delay="1000"
+            data-aos-delay="800"
           />
-          <div
-            className="relative max-w-[300px] flex items-end justify-end w-full"
-            data-aos="fade-up"
-            data-aos-delay="1300"
-          >
-            <Image
-              src="/assets/IMPREUNA.svg"
-              alt="text"
-              width={400}
-              height={10}
-              className="lg:w-[400px] w-[200px]"
-            />
-            <Image
-              src="/assets/line.svg"
-              alt="text"
-              width={100}
-              height={10}
-              className="absolute -bottom-14 lg:-bottom-20 lg:w-[400px] w-[200px]"
-            />
+          <div className="flex items-end justify-end max-w-[1000px] ">
+            <div
+              className="relative max-w-[1000px] flex items-start justify-end lg:justify-between  w-full"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <Image
+                src="/assets/sroll.svg"
+                alt="Image"
+                width={80}
+                height={10}
+                className="lg:block hidden cursor-pointer"
+                onClick={handleGoToTop}
+              />
+              <div className="relative">
+                <Image
+                  src="/assets/IMPREUNA.svg"
+                  alt="text"
+                  width={400}
+                  height={10}
+                  className="lg:w-[400px] w-[200px]"
+                />
+                <Image
+                  src="/assets/line.svg"
+                  alt="text"
+                  width={100}
+                  height={10}
+                  className="absolute -bottom-14 lg:-bottom-20 lg:w-[400px] w-[200px]"
+                />
+              </div>
+            </div>
           </div>
 
           <div
             className="w-full flex lg:flex-row flex-col-reverse justify-between mt-10"
             data-aos="fade-up"
-            data-aos-delay="2000"
+            data-aos-delay="800"
           >
             <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">
               Hai sa discutam proiectul tau
@@ -90,6 +110,17 @@ const Hero: React.FC = () => {
               />
             </div>
           </div>
+
+          <button className="flex items-center justify-center" onClick={handleGoToTop}>
+          <Image
+                src="/assets/sroll.svg"
+                alt="Image"
+                width={50}
+                height={10}
+                className="block lg:hidden"
+                
+              />
+          </button>
         </div>
       </div>
     </div>

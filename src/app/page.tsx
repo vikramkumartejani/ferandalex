@@ -25,7 +25,7 @@ const Home: React.FC = () => {
       <WhatWeOffer />
       <CustomerOpinion />
       <Footer />
-      <div className="fixed bottom-5 right-5 lg:bottom-[80px]  lg:right-[80px] flex w-full justify-end ms-auto">
+      <div className="fixed bottom-5 right-5 lg:bottom-[40px]  lg:right-[40px] flex w-full justify-end ms-auto">
         <button onClick={handleGoToTop}>
           <img src="/assets/up-arrow.svg" alt="Go to top" width="68.38px" />
         </button>

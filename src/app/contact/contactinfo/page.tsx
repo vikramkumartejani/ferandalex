@@ -19,7 +19,7 @@ const Contact = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations
+      duration: 500, // Duration of animations
       easing: "ease-in-out", // Easing function
       once: true, // Whether animation should happen only once
     });
@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="absolute h-full w-full z-[1]">
         <img
           data-aos="fade-in" // AOS animation
-          data-aos-delay="300" // Delay before the animation starts
+          data-aos-delay="200" // Delay before the animation starts
           height={"100%"}
           width={"100%"}
           className="object-cover h-full w-full lg:p-[30px] md:p-[20px] p-[10px]"
@@ -46,7 +46,7 @@ const Contact = () => {
           <div className="flex flex-col md:gap-[91px] gap-[50px]">
             <div
               data-aos="fade-up" // AOS animation
-              data-aos-delay="500" // Delay before the animation starts
+              data-aos-delay="200" // Delay before the animation starts
               className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
             >
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
@@ -82,7 +82,7 @@ const Contact = () => {
             </div>
             <div
               data-aos="fade-up" // AOS animation
-              data-aos-delay="700" // Delay before the animation starts
+              data-aos-delay="300" // Delay before the animation starts
               className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
             >
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
@@ -118,7 +118,7 @@ const Contact = () => {
             </div>
             <div
               data-aos="fade-up" // AOS animation
-              data-aos-delay="900" // Delay before the animation starts
+              data-aos-delay="500" // Delay before the animation starts
               className="flex flex-grow"
             >
               <div className="flex flex-col md:gap-[26px] gap-[20px] flex-grow">
@@ -142,8 +142,8 @@ const Contact = () => {
           <Link
             href="/contact/thankyou"
             data-aos="fade-up" // AOS animation
-            data-aos-delay="1100" // Delay before the animation starts
-            className="md:text-[70px] text-[50px] font-[400] leading-[69.02px] text-white backdrop-blur-sm"
+            data-aos-delay="600" // Delay before the animation starts
+            className="md:text-[70px] text-[50px] font-[400] leading-[69.02px] text-white "
           >
             Trimite
           </Link>

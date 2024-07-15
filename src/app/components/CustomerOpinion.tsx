@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const CustomerOpinion = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 800, // Animation duration in milliseconds
       once: true, // Whether animation should happen only once - while scrolling down
     });
   }, []);

@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const ThankYou = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations
+      duration: 500, // Duration of animations
       easing: "ease-in-out", // Easing function
       once: true, // Whether animation should happen only once
     });
@@ -20,7 +20,7 @@ const ThankYou = () => {
         <div className="w-full h-screen">
           <img
             data-aos="fade-in" // AOS animation
-            data-aos-delay="300" // Delay before the animation starts
+            data-aos-delay="200" // Delay before the animation starts
             height={"100%"}
             width={"100%"}
             className="object-cover md:p-[30px] sm:p-[20px] p-[10px] h-[1172px] w-full"
