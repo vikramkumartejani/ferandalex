@@ -104,7 +104,7 @@ const Footer = () => {
         <div className="mx-auto border max-w-[1220px]"></div>
         <div className="flex justify-between items-center md:pe-[30px] flex-wrap">
           <div className="md:mx-0 mx-auto flex md:justify-start md:w-fit w-full justify-center">
-            <img width={353} height={103} src="/assets/foot-img.svg" alt="" />
+            <img width={353} height={103} src="/assets/foot-img.svg" alt="Logo" />
           </div>
           <p className="text-[#090914] sm:text-[20px] md:mx-0 mx-auto text-[16px] py-6 font-[400] leading-[22px] font-clashdisplay-regular">
             © 2024 FERANDALEX SRL, All rights reserved.

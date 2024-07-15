@@ -10,7 +10,7 @@ const CustomerOpinion = () => {
   };
 
   return (
-    <div className="bg-white flex flex-col md:gap-[80px] md:gap-[40px] gap-[10px] md:py-[100px] py-[80px] lg:px-[157px] md:px-[70px] px-[25px] font-clashdisplay-regular">
+    <div className="bg-white flex flex-col md:gap-[80px] gap-[10px] md:py-[100px] py-[80px] lg:px-[157px] md:px-[70px] px-[25px] font-clashdisplay-regular">
       <h2 className="font-[700] text-[#F26A45] md:text-[64px] text-[30px] tracking-[9%] md:leading-[86.24px] leading-[60px]">
         OPINIA CLIENTILOR
       </h2>

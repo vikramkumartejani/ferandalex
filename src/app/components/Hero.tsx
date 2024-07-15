@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
       {/* Content on top of video */}
       <div className="absolute inset-0 flex items-center justify-center ">
         <div className="text-white text-center flex items-center justify-center bg-red-500">
-          <h1 className="text-4xl font-bold mb-4">Depasim orizonturile</h1>
-          <p className="text-lg">Your description or call to action</p>
+          <h1 className="text-2xl font-bold mb-4">Depasim orizonturile</h1>
+          {/* <p className="text-lg">Your description or call to action</p> */}
         </div>
       </div>
     </div>
