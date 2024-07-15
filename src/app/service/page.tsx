@@ -5,12 +5,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div
       className="absolute top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
       onClick={onClick}
+      data-aos="fade-left"
     >
       Next
     </div>
@@ -22,6 +25,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
     <div
       className="absolute top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
       onClick={onClick}
+      data-aos="fade-right"
     >
       Previous
     </div>
@@ -29,6 +33,10 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
 };
 
 const page = () => {
+  React.useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -43,37 +51,53 @@ const page = () => {
 
   return (
     <div className="text-white font-clashdisplay-regular">
-      <section className="relative h-[400px] md:h-full w-full">
-       <img
+      <section
+        data-aos="fade-down"
+        data-aos-delay="1000"
+        className="relative h-[400px] md:h-full w-full"
+      >
+        <img
           src="/assets/section-shape2.png"
           alt=""
           className="absolute top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
         />
-        <img src="/assets/service-bg.jpg" alt="" className="h-[400px] md:h-full w-full" />
+        <img
+          src="/assets/service-bg.jpg"
+          alt=""
+          className="h-[400px] md:h-full w-full"
+        />
         <img
           src="/assets/SERVICII.svg"
           alt=""
-          className=" absolute top-[60%] lg:top-2/3 ml-[5%] w-24 h-auto lg:w-auto uppercase"
+          className="absolute top-[60%] lg:top-2/3 ml-[5%] w-24 h-auto lg:w-auto uppercase"
+          data-aos="fade-up"
         />
-        {/* <h1 className="font-extrabold absolute top-[60%] lg:top-2/3 ml-[5%] uppercase text-[20px] leading-[25px] xl:text-[100px] x;:leading-[96px]">
-          SERVICII
-        </h1> */}
       </section>
 
-      <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white ">
+      <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white">
         <div className="relative">
-          <div className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden">
+          <div
+            className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="/assets/service-section-bg.jpeg"
               alt="Service Background"
               className="object-cover w-full h-full"
             />
-            <div className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm">
+            <div
+              data-aos="fade-down"
+              className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm"
+            >
               Constructii
             </div>
           </div>
         </div>
-        <p className="px-[5%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] ">
+        <p
+          data-aos="fade-left"
+          className="px-[5%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px]"
+        >
           Ferandalex ofera servicii complete de constructii, de la planificare
           si proiectare la executie si finisare. Echipa noastra de specialisti
           cu vasta experienta se ocupa de toate etapele procesului de
@@ -85,10 +109,13 @@ const page = () => {
         </p>
       </section>
 
-      <section className="border-t border-white ">
-        <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
+      <section className="border-t border-white">
+        <div className="mx-[5%] lg:mx-[15%] border-l border-r border-white">
           <div className="relative">
-            <div className="relative hidden lg:block  overflow-hidden">
+            <div
+              className="relative hidden lg:block overflow-hidden"
+              data-aos="fade-in"
+            >
               <img
                 src="/assets/service-section-bg2.jpeg"
                 alt="Service Background"
@@ -97,14 +124,15 @@ const page = () => {
               <img
                 src="/assets/interior-design.svg"
                 alt=""
+                data-aos="fade-left"
                 className="absolute top-[15%] right-0"
               />
-              {/* <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
-                INTERIOR <br /> <span className="gradient-text">DESIGN</span>
-              </div> */}
             </div>
 
-            <div className="relative  lg:hidden h-[500px]  overflow-hidden">
+            <div
+              className="relative lg:hidden h-[500px] overflow-hidden"
+              data-aos="fade-in"
+            >
               <img
                 src="/assets/service-section-bg2.jpeg"
                 alt="Service Background"
@@ -115,12 +143,12 @@ const page = () => {
                 alt=""
                 className="absolute top-[15%] right-0 w-[90%] h-auto"
               />
-              {/* <div className="absolute top-[15%] leading-[50px] font-extrabold right-0 h-[50%] text-[60px] text-start ">
-                INTERIOR <br /> <span className="gradient-text">DESIGN</span>
-              </div> */}
             </div>
           </div>
-          <p className="px-[10%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] py-[12%]">
+          <p
+            data-aos="fade-up"
+            className="px-[10%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px] py-[12%]"
+          >
             Cu o abordare personalizata si o atentie meticuloasa la detalii,
             echipa noastra va va ajuta sa va descoperiti stilul, nevoile si
             aspiratiile pentru a le transpune in designul casei dumneavoastra.
@@ -138,24 +166,29 @@ const page = () => {
         </div>
       </section>
 
-      <section className="border-t border-white ">
-        <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
+      <section className="border-t border-white">
+        <div className="mx-[5%] lg:mx-[15%] border-l border-r border-white">
           <div className="relative">
-            <div className="relative hidden lg:block overflow-hidden">
+            <div
+              className="relative hidden lg:block overflow-hidden"
+              data-aos="zoom-in"
+            >
               <img
                 src="/assets/service-section-bg3.jpeg"
                 alt="Service Background"
+                data-aos="zoom-out"
                 className="object-cover w-full h-full"
               />
               <img
                 src="/assets/CLEANING.svg"
                 alt=""
+                data-aos="fade-right"
                 className="absolute top-[15%] right-0"
               />
-              {/* <div className="absolute top-[15%] leading-[100px] font-extrabold right-0 h-[50%] text-[120px] text-start ">
-                CLEANING
-              </div> */}
-              <div className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex items-center justify-center text-[30px] leading-[37px] text-start backdrop-blur-sm">
+              <div
+                data-aos="fade-up"
+                className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex items-center justify-center text-[30px] leading-[37px] text-start backdrop-blur-sm"
+              >
                 Pasiunea noastra pentru curatenie se traduce in spatii
                 impecabile si confortabile pentru dumneavoastra. Echipa noastra
                 de profesionisti se dedica utilizarii celor mai performante
@@ -171,7 +204,10 @@ const page = () => {
               </div>
             </div>
 
-            <div className="relative lg:hidden h-[1000px]  overflow-hidden">
+            <div
+              className="relative lg:hidden h-[1000px] overflow-hidden"
+              data-aos="fade-in"
+            >
               <img
                 src="/assets/service-section-bg3.jpeg"
                 alt="Service Background"
@@ -182,10 +218,7 @@ const page = () => {
                 alt=""
                 className="absolute top-[15%] w-[90%] h-auto right-0"
               />
-              {/* <div className="absolute top-[15%] leading-[60px] font-extrabold right-0 h-[50%] text-[55px] text-start ">
-                CLEANING
-              </div> */}
-              <div className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex  items-center justify-center text-[15px] leading-[20px] text-start backdrop-blur-sm">
+              <div className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex items-center justify-center text-[15px] leading-[20px] text-start backdrop-blur-sm">
                 Pasiunea noastra pentru curatenie se traduce in spatii
                 impecabile si confortabile pentru dumneavoastra. Echipa noastra
                 de profesionisti se dedica utilizarii celor mai performante
@@ -205,20 +238,22 @@ const page = () => {
       </section>
 
       <section className="border-t border-white max-h-[1400px] overflow-hidden">
-        <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
+        <div className="mx-[5%] lg:mx-[15%] border-l border-r border-white">
           <div className="flex py-[2%] pt-[4%] justify-end items-end">
             <img
               src="/assets/GALLERY.svg"
               alt=""
               className="w-[90%] lg:w-auto"
+              data-aos="fade-up"
             />
           </div>
-          {/* <h1 className="gradient-text text-[70px] lg:text-[180px] leading-[180px] font-extrabold flex justify-end">
-            GALLERY
-          </h1> */}
 
           {/* Slick slider */}
-          <div className="flex flex-col justify-center w-full mx-auto ">
+          <div
+            className="flex flex-col justify-center w-full mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <Slider {...settings}>
               <div>
                 <Image
@@ -226,27 +261,27 @@ const page = () => {
                   alt="Slide 1"
                   width={600}
                   height={600}
-                  className="  w-full h-auto"
+                  className="w-full h-auto"
                 />
               </div>
 
               <div>
                 <Image
                   src="/assets/service-section-carousel-img.svg"
-                  alt="Slide 1"
+                  alt="Slide 2"
                   width={600}
                   height={600}
-                  className="  w-full h-auto"
+                  className="w-full h-auto"
                 />
               </div>
 
               <div>
                 <Image
                   src="/assets/service-section-carousel-img.svg"
-                  alt="Slide 1"
+                  alt="Slide 3"
                   width={600}
                   height={600}
-                  className="  w-full h-auto"
+                  className="w-full h-auto"
                 />
               </div>
             </Slider>
@@ -254,7 +289,7 @@ const page = () => {
           {/* End  */}
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
