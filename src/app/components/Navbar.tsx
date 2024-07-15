@@ -109,6 +109,7 @@ const Navbar = () => {
                     href="/"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Home"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Home
                   </Link>
@@ -116,6 +117,7 @@ const Navbar = () => {
                 <li data-aos="fade-up" data-aos-delay="100">
                   <Link
                     href="/about"
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="About Us"
                   >
@@ -124,6 +126,7 @@ const Navbar = () => {
                 </li>
                 <li data-aos="fade-up" data-aos-delay="200">
                   <Link
+                    onClick={() => setIsMobileMenuOpen(false)}
                     href="/service"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Services"
@@ -133,6 +136,7 @@ const Navbar = () => {
                 </li>
                 <li data-aos="fade-up" data-aos-delay="300">
                   <Link
+                    onClick={() => setIsMobileMenuOpen(false)}
                     href="/contact"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Contact Us"
@@ -141,7 +145,10 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
-              <button className="border-2 border-[#FFFFFF] rounded-[45px] px-10 md:px-14 py-5 md:py-8 text-[35px] md:text-[50px] leading-[40px] font-clashdisplay-regular mt-4">
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="border-2 border-[#FFFFFF] rounded-[45px] px-10 md:px-14 py-5 md:py-8 text-[35px] md:text-[50px] leading-[40px] font-clashdisplay-regular mt-4"
+              >
                 Discuta cu noi
               </button>
             </div>
