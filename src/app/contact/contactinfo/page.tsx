@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos"; // Import AOS
 
@@ -17,7 +17,7 @@ const Contact = () => {
     console.log(name, company, phone, jobFunction, description);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of animations
       easing: "ease-in-out", // Easing function

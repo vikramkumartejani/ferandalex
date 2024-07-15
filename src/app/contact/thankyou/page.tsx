@@ -3,9 +3,10 @@ import Link from "next/link";
 import React from "react";
 import "aos/dist/aos.css"; // Import AOS styles if needed
 import AOS from "aos"; // Import AOS
+import { useEffect } from "react";
 
 const ThankYou = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of animations
       easing: "ease-in-out", // Easing function

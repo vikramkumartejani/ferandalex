@@ -3,9 +3,10 @@ import React from "react";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const page = () => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
