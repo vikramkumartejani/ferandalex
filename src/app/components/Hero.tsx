@@ -14,12 +14,7 @@ const Hero: React.FC = () => {
   }, []);
 
 
-  const handleGoToTop = () => {
-    window.scrollTo({
-      bottom: 0,
-      behavior: "smooth", // Optional: smooth scrolling animation
-    });
-  };
+  
 
   return (
     <div className="relative w-full h-screen">
@@ -62,7 +57,7 @@ const Hero: React.FC = () => {
                 width={80}
                 height={10}
                 className="lg:block hidden cursor-pointer"
-                onClick={handleGoToTop}
+                // onClick={handleGoToTop}
               />
               <div className="relative">
                 <Image
@@ -111,7 +106,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <button className="flex items-center justify-center" onClick={handleGoToTop}>
+          <button className="flex items-center justify-center">
           <Image
                 src="/assets/sroll.svg"
                 alt="Image"
