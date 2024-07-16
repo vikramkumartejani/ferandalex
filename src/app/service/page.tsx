@@ -12,7 +12,7 @@ import { useEffect } from "react";
 const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div
-      className="absolute top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
+      className="absolute hidden top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
       onClick={onClick}
       data-aos="fade-up"
     >
@@ -24,7 +24,7 @@ const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
 const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div
-      className="absolute top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
+      className="absolute hidden top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
       onClick={onClick}
       data-aos="fade-up"
     >
@@ -44,16 +44,32 @@ const Page = () => {
     AOS.init({ duration: 800 });
   }, []);
 
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   nextArrow: <NextArrow />,
+  //   prevArrow: <PrevArrow />,
+  // };
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    vertical: true,
+    verticalSwiping: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    beforeChange: function (currentSlide: number, nextSlide: number) {
+      console.log("before change", currentSlide, nextSlide);
+    },
+    afterChange: function (currentSlide: number) {
+      console.log("after change", currentSlide);
+    },
   };
 
   return (
@@ -88,25 +104,65 @@ const Page = () => {
       </section>
 
       <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white">
-        <div className="relative">
-          <div
-            className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="/assets/service-section-bg.jpeg"
-              alt="Service Background"
-              className="object-cover w-full h-full"
-            />
+        <Slider {...settings} className="max-h-[900px] custom-slider">
+          <div className="relative">
             <div
-              data-aos="fade-down"
-              className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm"
+              className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
-              Constructii
+              <img
+                src="/assets/service-section-bg.jpeg"
+                alt="Service Background"
+                className="object-cover w-full h-full"
+              />
+              <div
+                data-aos="fade-down"
+                className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm"
+              >
+                Constructii
+              </div>
             </div>
           </div>
-        </div>
+          <div className="relative">
+            <div
+              className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="/assets/service-section-bg.jpeg"
+                alt="Service Background"
+                className="object-cover w-full h-full"
+              />
+              <div
+                data-aos="fade-down"
+                className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm"
+              >
+                Constructii
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            <div
+              className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="/assets/service-section-bg.jpeg"
+                alt="Service Background"
+                className="object-cover w-full h-full"
+              />
+              <div
+                data-aos="fade-down"
+                className="absolute bottom-0 w-full bg-white/20 rounded-t-3xl lg:rounded-t-[140px] h-[50%] flex items-center justify-center text-[40px] lg:text-[120px] text-center backdrop-blur-sm"
+              >
+                Constructii
+              </div>
+            </div>
+          </div>
+        </Slider>
         <p
           data-aos="fade-up"
           className="px-[5%] lg:px-[20%] text-[15px] lg:text-[30px] leading-[20px] lg:leading-[37px]"

@@ -121,22 +121,17 @@ const Hero: React.FC = () => {
             </Link>
             <div className="flex items-center gap-1">
               <button
-                className="font-clashdisplay-regular flex items-center text-[35px] leading-[49px]"
+                className="font-clashdisplay-regular flex items-center text-[25px] md:text-[35px] leading-[49px]"
                 onClick={togglePlayPause}
               >
                 {!isPlaying ? "Play" : "Pause"}
+
+                {!isPlaying ? (
+                  <IoPlayOutline className="h-[34px] md:h-[54px] w-auto" />
+                ) : (
+                  <IoPauseOutline className="h-[34px] md:h-[54px] w-auto" />
+                )}
               </button>
-              {/* <Image
-                src="/assets/Pause.svg"
-                alt="Pause / Play"
-                width={48}
-                height={54}
-              /> */}
-              {!isPlaying ? (
-                <IoPlayOutline className="h-[54px] w-auto" />
-              ) : (
-                <IoPauseOutline className="h-[54px] w-auto" />
-              )}
             </div>
           </div>
 
