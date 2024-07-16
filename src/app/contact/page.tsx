@@ -1,9 +1,8 @@
 "use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import React from "react";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos"; // Import AOS
-import { useEffect } from "react";
 
 const Contact = () => {
   useEffect(() => {
@@ -15,49 +14,46 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex items-center bg-[#000000] h-screen overflow-x-hidden relative">
+    <div className="flex items-center justify-center bg-[#000000] min-h-screen lg:h-screen h-[800px]  overflow-hidden relative sm:m-[20px] m-[10px]">
       <h1
         data-aos="fade-up"
         data-aos-delay="700"
-        className="absolute md:top-1/2 sm:top-[30%] top-[35%] lg:left-[26px] md:left-[30px] left-[40px] z-[2] text-white lg:text-[120px] md:text-[92px] sm:text-[60px] text-[30px] font-[400] md:leading-[119.31px] sm:leading-[80px] leading-[40px] pe-[30px]"
+        className="text-white lg:text-[90px] md:text-[80px] sm:text-[60px] text-[38px] sm:leading-[85px] leading-[60px] font-bold absolute md:left-[30px] sm:left-[10px] left-0 xlg:top-[35%] lg:top-[35%] top-[23%] z-10"
       >
         Hai sa construim impreuna
       </h1>
-      <div className="w-full h-screen flex items-center justify-end relative">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="1200"
-          className="w-fit h-screen"
-        >
-          <img
-            height={1270}
-            width={780}
-            className="md:h-auto md:w-auto h-[100%] w-[100%] object-cover md:p-[30px] p-[20px]"
-            src="/assets/contact-img.svg"
-            alt="contact-img"
-          />
-          <div className="max-w-[510px] absolute flex-col gap-6 2xl:top-[99%] xl:top-[105%] lg:top-[120%] md:top-[119%] sm:top-[73%] top-[69%] ms-[45px] mx-auto flex items-start justify-start  me-auto transform -translate-y-1/2">
-            <Link
-              href="/contact/contactinfo"
-              className="font-clashdisplay-regular w-full md:px-[20px] md:py-[20px] sm:px-[15px] sm:py-[0px] px-[10px] py-[5px] text-white lg:text-[40px] md:text-[35px] sm:text-[18px] text-[17px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
-              style={{ zIndex: 10 }}
-            >
-              Completeaza formular
-            </Link>
-            <Link
-              href="/contact/contactinfo"
-              className="font-clashdisplay-regular text-center w-full md:px-[20px] md:py-[20px] sm:px-[15px] sm:py-[0px] px-[10px] py-[5px] text-white lg:text-[40px] md:text-[35px] sm:text-[18px] text-[17px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
-              style={{ zIndex: 10 }}
-            >
-              Scrie-ne pe e-mail
-            </Link>
-            <Link
-              href="/contact/contactinfo"
-              className="font-clashdisplay-regular w-full text-center md:px-[20px] md:py-[20px] sm:px-[15px] sm:py-[0px] px-[10px] py-[5px] text-white lg:text-[40px] md:text-[35px] sm:text-[18px] text-[17px] border-2 border-[#FFFFFF1A] md:font-[400] font-[500] leading-[49.2px] bg-[#FFFFFF52] hover:bg-[#ffffff62] rounded-[70px] transition duration-300 ease-in-out backdrop-blur-sm"
-              style={{ zIndex: 10 }}
-            >
-              Suna-ne
-            </Link>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-full lg:h-screen h-full flex items-center justify-end ">
+          <div
+            className="h-full w-[70%] md:w-[60%] lg:w-[45%] relative"
+            data-aos="fade-up"
+            data-aos-delay="1200"
+          >
+            <img
+              className="h-[1310px] w-full object-cover"
+              src="/assets/contact-img.svg"
+              alt="contact-img"
+            />
+            <div className="absolute inset-0 flex w-fit md:mx-0 mx-auto flex-col items-start justify-center xlg:top-[47.5%] lg:top-[47%] md:top-[20%] sm:top-[13%] top-[-6%] gap-6 md:ps-4">
+              <Link
+                href="/contact/contactinfo"
+                className="font-clashdisplay-regular w-full sm:px-6 sm:py-3 px-[10px] py-[4px] text-white text-center lg:text-[30px] md:text-[22px] sm:text-[18px] text-[15px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF52] hover:bg-[#ffffff62] transition duration-300 ease-in-out backdrop-blur-sm"
+              >
+                Completeaza formular
+              </Link>
+              <Link
+                href="/contact/contactinfo"
+                className="font-clashdisplay-regular w-full sm:px-6 sm:py-3 px-[10px] py-[4px] text-white text-center lg:text-[30px] md:text-[22px] sm:text-[18px] text-[15px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF52] hover:bg-[#ffffff62] transition duration-300 ease-in-out backdrop-blur-sm"
+              >
+                Scrie-ne pe e-mail
+              </Link>
+              <Link
+                href="/contact/contactinfo"
+                className="font-clashdisplay-regular w-full sm:px-6 sm:py-3 px-[10px] py-[4px] text-white text-center lg:text-[30px] md:text-[22px] sm:text-[18px] text-[15px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF52] hover:bg-[#ffffff62] transition duration-300 ease-in-out backdrop-blur-sm"
+              >
+                Suna-ne
+              </Link>
+            </div>
           </div>
         </div>
       </div>

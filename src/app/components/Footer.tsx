@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-blue-50 to-pink-50">
       <div className="mx-auto">
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[46px] py-[89px] md:px-[70px] sm:px-[30px] px-[20px] max-w-[1280px] mx-auto sm:text-left text-center"
+          className="grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[46px] py-[89px] md:px-[70px] sm:px-[30px] px-[20px] max-w-[1280px] mx-auto sm:text-left text-center"
           data-aos="fade-up"
         >
           <div

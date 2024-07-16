@@ -38,28 +38,28 @@ const Contact = () => {
           alt="contact-img"
         />
       </div>
-      <div className="px-10 flex lg:flex-row flex-col items-start lg:items-center relative lg:ps-[50px] md:ps-0 sm:ps-[50px] ps-[25px] z-[2] pt-[200px] pb-[178px]">
+      <div className="flex lg:flex-row flex-col items-start lg:items-center relative lg:ps-[50px] md:ps-[50px] sm:ps-[35px] ps-[25px] z-[2] pt-[200px] pb-[178px]">
         <form
           onSubmit={handleSubmit}
-          className="lg:w-2/3 sm:w-[90%] w-[95%] flex flex-col justify-center text-white"
+          className="lg:w-2/3 md:w-[57%] sm:w-[65%] w-[95%] flex flex-col justify-center text-white"
         >
           <div className="flex flex-col md:gap-[91px] gap-[50px]">
             <div
               data-aos="fade-up" // AOS animation
               data-aos-delay="200" // Delay before the animation starts
-              className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
+              className="flex lg:flex-row flex-col lg:gap-[130px] gap-[50px]"
             >
-              <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
+              <div className="flex flex-col flex-1 lg:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="name"
-                  className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
+                  className="block md:text-[40px] sm:text-[30px] text-[26px] font-[400] md:leading-[49.2px] leading-[10px]"
                 >
                   Nume
                 </label>
                 <input
                   type="text"
                   id="name"
-                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[60px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[50px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -67,14 +67,14 @@ const Contact = () => {
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="phone"
-                  className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
+                  className="block md:text-[40px] sm:text-[30px] text-[26px] font-[400] md:leading-[49.2px] leading-[10px]"
                 >
                   Telefon
                 </label>
                 <input
                   type="tel"
                   id="phone"
-                  className="shadow appearance-none sm:h-[73px] h-[60px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none sm:h-[73px] h-[50px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
@@ -83,19 +83,19 @@ const Contact = () => {
             <div
               data-aos="fade-up" // AOS animation
               data-aos-delay="300" // Delay before the animation starts
-              className="flex md:flex-row flex-col lg:gap-[130px] gap-[50px]"
+              className="flex lg:flex-row flex-col lg:gap-[130px] gap-[50px]"
             >
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="company"
-                  className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
+                  className="block md:text-[40px] sm:text-[30px] text-[26px] font-[400] md:leading-[49.2px] leading-[10px]"
                 >
                   Companie
                 </label>
                 <input
                   type="text"
                   id="company"
-                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[60px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[50px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                 />
@@ -103,14 +103,14 @@ const Contact = () => {
               <div className="flex flex-col flex-1 md:gap-[26px] gap-[20px]">
                 <label
                   htmlFor="jobFunction"
-                  className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
+                  className="block md:text-[40px] sm:text-[30px] text-[26px] font-[400] md:leading-[49.2px] leading-[10px]"
                 >
                   Funcție
                 </label>
                 <input
                   type="text"
                   id="jobFunction"
-                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[60px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow backdrop-blur-sm appearance-none sm:h-[73px] h-[50px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF4D] w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                   value={jobFunction}
                   onChange={(e) => setJobFunction(e.target.value)}
                 />
@@ -124,7 +124,7 @@ const Contact = () => {
               <div className="flex flex-col md:gap-[26px] gap-[20px] flex-grow">
                 <label
                   htmlFor="description"
-                  className="block md:text-[40px] text-[30px] font-[400] md:leading-[49.2px] leading-[30px]"
+                  className="block md:text-[40px] sm:text-[30px] text-[26px] font-[400] md:leading-[49.2px] leading-[10px]"
                 >
                   Descriere proiect
                 </label>
