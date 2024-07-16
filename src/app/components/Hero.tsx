@@ -5,10 +5,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import { IoPauseOutline, IoPlayOutline } from "react-icons/io5";
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -120,21 +121,22 @@ const Hero: React.FC = () => {
             </Link>
             <div className="flex items-center gap-1">
               <button
-                className="font-clashdisplay-regular flex items-center gap-2 text-[35px] leading-[49px]"
+                className="font-clashdisplay-regular flex items-center text-[35px] leading-[49px]"
                 onClick={togglePlayPause}
               >
-                Play
-                <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">
-                  /
-                </span>
-                Pause
+                {!isPlaying ? "Play" : "Pause"}
               </button>
-              <Image
+              {/* <Image
                 src="/assets/Pause.svg"
                 alt="Pause / Play"
                 width={48}
                 height={54}
-              />
+              /> */}
+              {!isPlaying ? (
+                <IoPlayOutline className="h-[54px] w-auto" />
+              ) : (
+                <IoPauseOutline className="h-[54px] w-auto" />
+              )}
             </div>
           </div>
 
