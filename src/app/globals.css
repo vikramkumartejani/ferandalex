@@ -117,3 +117,23 @@
     display: none;
   }
 }
+
+.custom-slider .slick-dots {
+  left: -110%; /* Align dots to the left */
+  top: -10%; /* Center vertically */
+  transform: translateY(-0%); /* Center vertically */
+  rotate: 90deg;
+}
+
+.custom-slider .slick-dots li {
+  margin: 0; /* Adjust margin if needed */
+}
+
+.custom-slider .slick-dots li button:before {
+  font-size: 12px; /* Adjust dot size if needed */
+  color: #d9d9d9; /* Adjust dot color if needed */
+}
+
+.custom-slider .slick-dots li.slick-active button:before {
+  color: white;
+}
