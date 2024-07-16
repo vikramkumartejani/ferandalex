@@ -66,13 +66,19 @@ const Page = () => {
         <img
           src="/assets/section-shape2.png"
           alt=""
-          className="absolute top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
+          className="absolute md:hidden top-0 bottom-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
         />
         <img
           src="/assets/service-bg.jpg"
           alt=""
-          className="h-[400px] md:h-full w-full"
+          className="h-[400px] md:hidden w-full"
         />
+        <img
+          src="/assets/service-background.png"
+          alt=""
+          className="hidden md:block h-full object-cover w-full"
+        />
+
         <img
           src="/assets/SERVICII.svg"
           alt=""
