@@ -14,19 +14,19 @@ const OurVision: React.FC = () => {
   return (
     <div className="overflow-hidden">
       <h2
-        className="pt-[50px] md:pt-[160px] lg:px-[120px] md:px-[80px] px-[25px] text-[#F26A45] md:text-[64px] text-[35px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
+        className="pt-[200px] lg:px-[120px] md:px-[80px] sm:px-[50px] px-[40px] text-[#F26A45] md:text-[64px] sm:text-[35px] text-[30px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
         data-aos="fade-up"
         data-aos-delay="500"
       >
         Viziunea noastra
       </h2>
       <div
-        className="flex lg:flex-row flex-col lg:order-1 order-2 items-end justify-between mb-auto h-full text-[#EFE8E9] md:text-[30px] text-[22px] font-[400] leading-[40.42px] tracking-[9%] font-clashdisplay-regular"
+        className="flex lg:flex-row flex-col lg:order-1 order-2 items-end justify-between mb-auto h-full text-[#EFE8E9] md:text-[30px] sm:text-[22px] text-[19px] font-[400] md:leading-[40.42px] sm:leading-[30px] leading-[27px] tracking-[9%] font-clashdisplay-regular"
         data-aos="fade-up"
         data-aos-delay="800"
       >
         <div
-          className="flex flex-col gap-[60px] lg:ps-[81px] md:ps-[80px] ps-[25px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[200px] py-[50px] w-full lg:w-[60%]"
+          className="flex flex-col gap-[30px] lg:ps-[81px] md:ps-[80px] sm:px-[50px] px-[40px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[200px] py-[150px] pb-[200px] w-full lg:w-[60%]"
           data-aos="fade-up"
           data-aos-delay="1000"
         >
@@ -45,7 +45,7 @@ const OurVision: React.FC = () => {
         </div>
 
         <div
-          className="relative me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large"
+          className="relative  me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large "
           data-aos="fade-up"
           data-aos-delay="1200"
         >
