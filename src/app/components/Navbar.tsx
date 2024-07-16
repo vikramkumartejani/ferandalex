@@ -1,26 +1,50 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    AOS.init();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="w-full h-auto">
+    <header className="w-full h-auto max-w-[1920px] mx-auto">
       {/* Navbar */}
       <nav
-        className="fixed top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] h-[100px] backdrop-blur-sm"
+        className={`fixed max-w-[1920px] mx-auto top-0 left-0 right-0 z-10 bg-[#FFFFFF2B] border border-[#FFFFFF1A] text-white px-4 lg:px-[40px] 2xl:px-[90px] md:h-[100px] h-[70px] ${
+          isScrolled ? "backdrop-blur-sm" : ""
+        }`}
         data-aos="fade-down"
       >
         <div className="flex w-full justify-between items-center my-auto h-full">
-          <Link href="/" className="flex items-center" aria-label="Homepage">
+          <Link
+            href="/"
+            className="flex items-center md:w-[200px] w-[160px]"
+            aria-label="Homepage"
+          >
             <Image src="/assets/Logo.svg" alt="Logo" width={200} height={31} />
           </Link>
           <div className="hidden xlg:flex items-center">
@@ -73,7 +97,7 @@ const Navbar = () => {
                 alt="Menu"
                 width={60}
                 height={60}
-                className="md:w-[60px] md:h-[60px] w-[50px] h-[50px]"
+                className="md:w-[60px] md:h-[60px] w-[45px] h-[45px]"
               />
             </button>
           </div>

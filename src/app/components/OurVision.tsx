@@ -12,7 +12,7 @@ const OurVision: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-hidden">
       <h2
         className="pt-[50px] md:pt-[160px] lg:px-[120px] md:px-[80px] px-[25px] text-[#F26A45] md:text-[64px] text-[35px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
         data-aos="fade-up"

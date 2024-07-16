@@ -13,7 +13,7 @@ const Corporate: React.FC = () => {
 
   return (
     <div className="bg-[#F26A45]">
-      <div className="overflow-x-hidden">
+      <div className="overflow-hidden">
         <h2
           className="font-clashdisplay-bold md:pt-[160px] pt-[100px] lg:ps-[120px] lg:pe-0 md:px-[81px] sm:px-[25px] px-[20px] text-white md:text-[64px] text-[43px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[0.09em]"
           data-aos="fade-up"
@@ -31,7 +31,7 @@ const Corporate: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <div className="absolute z-2 md:top-[14%] sm:top-[14%] top-[13%] lg:left-[30%] left-2 w-[820px]">
+            <div className="absolute z-2 md:top-[13%] sm:top-[14%] top-[13%] lg:left-[30%] left-2 w-[820px]">
               <span className="relative z-[1]">
                 <img
                   className="h-fit lg:w-[1052px] md:w-[750px] sm:w-[620px] w-[300px]"

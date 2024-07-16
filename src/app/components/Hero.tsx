@@ -1,11 +1,14 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     AOS.init({
       duration: 800, // animation duration in milliseconds
@@ -13,15 +16,29 @@ const Hero: React.FC = () => {
     });
   }, []);
 
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
-  
+  const handlePause = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
 
   return (
     <div className="relative w-full h-screen">
       {/* Video Background */}
-
-      <div className="w-full h-screen lg:h-auto overflow-hidden">
-        <video className="w-full h-full object-cover" autoPlay loop muted>
+      <div className="w-full h-full overflow-hidden">
+        <video
+          ref={videoRef}
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+        >
           <source
             src="/assets/hero.mp4"
             className="h-screen"
@@ -83,18 +100,26 @@ const Hero: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="800"
           >
-            <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">
-              Hai sa discutam proiectul tau
-              <IoIosArrowRoundForward className="text-3xl lg:text-5xl" />
-            </h1>
+            <Link href="/contact">
+              <h1 className="text-[20px] md:text-[30px] lg:text-[35px] leading-[49px] font-clashdisplay-regular flex items-center gap-1.5">
+                Hai sa discutam proiectul tau
+                <IoIosArrowRoundForward className="text-3xl lg:text-5xl" />
+              </h1>
+            </Link>
             <div className="flex items-center gap-1">
-              <button className="font-clashdisplay-regular text-[35px] leading-[49px]">
+              <button
+                className="font-clashdisplay-regular text-[35px] leading-[49px]"
+                onClick={handlePlay}
+              >
                 Play
               </button>
               <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">
                 /
               </span>
-              <button className="lg:block hidden font-clashdisplay-regular text-[35px] leading-[49px]">
+              <button
+                className="lg:block hidden font-clashdisplay-regular text-[35px] leading-[49px]"
+                onClick={handlePause}
+              >
                 Pause
               </button>
               <Image
@@ -107,14 +132,13 @@ const Hero: React.FC = () => {
           </div>
 
           <button className="flex items-center justify-center">
-          <Image
-                src="/assets/sroll.svg"
-                alt="Image"
-                width={50}
-                height={10}
-                className="block lg:hidden"
-                
-              />
+            <Image
+              src="/assets/sroll.svg"
+              alt="Image"
+              width={50}
+              height={10}
+              className="block lg:hidden"
+            />
           </button>
         </div>
       </div>

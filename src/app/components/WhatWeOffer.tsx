@@ -31,7 +31,7 @@ const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
     >
       <Image
         src="/assets/arrow-lef.svg"
-        alt="Right Arrow"
+        alt="Left Arrow"
         width={150}
         height={50}
       />
@@ -76,54 +76,88 @@ const WhatWeOffer = () => {
         data-aos-delay="800"
       >
         <Slider {...settings}>
-          <div>
+          <div className="slide-content">
             <Image
               src="/assets/what-we-offer.svg"
               alt="Slide 1"
               width={1000}
               height={600}
-              className="  w-full h-auto"
+              className="w-full h-auto"
             />
+            <div className="text-content mt-4">
+              <h2
+                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                data-aos="fade-up"
+                data-aos-delay="1100"
+              >
+                CONSTRUCTII
+              </h2>
+              <p
+                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                data-aos="fade-up"
+                data-aos-delay="1400"
+              >
+                Transformam viziunea in realitate. Oferim servicii complete de
+                constructii si amenajari, de la primele idei pana la predarea
+                cheii.
+              </p>
+            </div>
           </div>
-          <div>
+          <div className="slide-content">
             <Image
               src="/assets/what-we-offer.svg"
               alt="Slide 2"
               width={1000}
               height={600}
-              className=" w-full h-auto"
+              className="w-full h-auto"
             />
+            <div className="text-content mt-4">
+              <h2
+                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                data-aos="fade-up"
+                data-aos-delay="1100"
+              >
+                PROIECTARE
+              </h2>
+              <p
+                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                data-aos="fade-up"
+                data-aos-delay="1400"
+              >
+                Oferim solutii complete de proiectare si design, personalizate
+                in functie de nevoile si dorintele tale.
+              </p>
+            </div>
           </div>
-          <div>
+          <div className="slide-content">
             <Image
               src="/assets/what-we-offer.svg"
               alt="Slide 3"
               width={1000}
               height={600}
-              className="  w-full h-auto"
+              className="w-full h-auto"
             />
+            <div className="text-content mt-4">
+              <h2
+                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                data-aos="fade-up"
+                data-aos-delay="1100"
+              >
+                CONSULTANTA
+              </h2>
+              <p
+                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                data-aos="fade-up"
+                data-aos-delay="1400"
+              >
+                Te consiliem la fiecare pas, pentru a asigura succesul
+                proiectului tau.
+              </p>
+            </div>
           </div>
         </Slider>
       </div>
-      {/* End  */}
-
-      <div className="mt-[80px] flex justify-center items-start flex-col mx-auto gap-[15px] max-w-[1000px] w-full">
-        <h2
-          className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
-          data-aos="fade-up"
-          data-aos-delay="1100"
-        >
-          CONSTRUCTII
-        </h2>
-        <p
-          className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
-          data-aos="fade-up"
-          data-aos-delay="1400"
-        >
-          Transformam viziunea in realitate. Oferim servicii complete de
-          constructii si amenajari, de la primele idei pana la predarea cheii.
-        </p>
-      </div>
+      {/* End */}
     </div>
   );
 };
