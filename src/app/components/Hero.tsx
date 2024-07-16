@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import AOS from "aos";
@@ -8,6 +8,7 @@ import Link from "next/link";
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -25,6 +26,17 @@ const Hero: React.FC = () => {
   const handlePause = () => {
     if (videoRef.current) {
       videoRef.current.pause();
+    }
+  };
+
+  const togglePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
     }
   };
 
@@ -108,18 +120,13 @@ const Hero: React.FC = () => {
             </Link>
             <div className="flex items-center gap-1">
               <button
-                className="font-clashdisplay-regular text-[35px] leading-[49px]"
-                onClick={handlePlay}
+                className="font-clashdisplay-regular flex items-center gap-2 text-[35px] leading-[49px]"
+                onClick={togglePlayPause}
               >
                 Play
-              </button>
-              <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">
-                /
-              </span>
-              <button
-                className="lg:block hidden font-clashdisplay-regular text-[35px] leading-[49px]"
-                onClick={handlePause}
-              >
+                <span className="font-clashdisplay-regular text-[35px] leading-[49px] lg:block hidden">
+                  /
+                </span>
                 Pause
               </button>
               <Image

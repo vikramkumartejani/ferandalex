@@ -23,17 +23,26 @@ const Page = () => {
         <img
           src="/assets/section-shape.png"
           alt=""
-          className="absolute top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
+          className="absolute md:hidden top-0 md:-top-10 left-0 h-[400px] md:h-full w-full"
         />
-        <img
-          src="/assets/about-section-bg.jpeg"
-          alt=""
-          className="h-[400px] md:h-full w-full"
-        />
+        <div className="md:hidden h-[400px] w-full overflow-hidden">
+          <img
+            src="/assets/about-section-bg.jpeg"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="hidden md:block h-full w-full overflow-hidden">
+          <img
+            src="/assets/about-background.png"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
         <img
           src="/assets/DESPRE NOI.svg"
           alt=""
-          className="absolute top-[60%] lg:top-2/3 ml-[5%] w-[60%] lg:w-auto"
+          className="absolute top-[65%] lg:top-[60%]  ml-[5%] w-[60%] lg:w-[70%]"
           data-aos="fade-up"
         />
       </section>
