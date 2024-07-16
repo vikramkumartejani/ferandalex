@@ -139,7 +139,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="mx-auto border "></div>
-        <div className="flex xs:flex-row flex-col justify-center items-center sm:pe-[30px] pe-[20px]">
+        <div className="flex xs:flex-row flex-col justify-between items-center sm:pe-[30px] pe-[20px]">
           <div className="xs:mx-0 mx-auto flex xs:justify-start xs:w-fit w-full justify-center">
             <img
               width={353}
