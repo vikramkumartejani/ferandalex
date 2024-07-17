@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
             </Link>
             <div className="flex items-center gap-1">
               <button
-                className="font-clashdisplay-regular flex items-center text-[25px] md:text-[35px] leading-[49px]"
+                className="font-clashdisplay-regular hover:scale-110 duration-300 flex items-center text-[25px] md:text-[35px] leading-[49px]"
                 onClick={togglePlayPause}
               >
                 {!isPlaying ? "Play" : "Pause"}

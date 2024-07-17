@@ -31,14 +31,14 @@ const Corporate: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <div className="absolute z-2 md:top-[13%] sm:top-[14%] top-[13%] lg:left-[30%] left-2 w-[820px]">
-              <span className="relative z-[1]">
+            <div className="absolute z-2 md:top-[13%] sm:top-[14%] top-[25%] lg:left-[30%] left-2 w-[820px]">
+              <span className="relative z-[2] md:z-0">
                 <img
-                  className="h-fit lg:w-[1052px] md:w-[750px] sm:w-[620px] w-[300px]"
+                  className="h-fit lg:w-[1052px]  md:w-[750px] sm:w-[620px] w-[300px]"
                   src="/assets/CORPORATE.svg"
                   alt="modern"
                   data-aos="zoom-in"
-                  data-aos-delay="1200"
+                  data-aos-delay="300"
                 />
               </span>
               <span className="relative z-[2]">
@@ -47,7 +47,7 @@ const Corporate: React.FC = () => {
                   src="/assets/PROJECTS.svg"
                   alt="architecture"
                   data-aos="zoom-in"
-                  data-aos-delay="1400"
+                  data-aos-delay="400"
                 />
               </span>
             </div>
@@ -56,13 +56,13 @@ const Corporate: React.FC = () => {
               src="/assets/corporate.png"
               alt="corporate"
               data-aos="fade-up"
-              data-aos-delay="1600"
+              data-aos-delay="600"
             />
           </div>
           <div
-            className="flex flex-col gap-[60px] lg:px-[30px] md:px-[81px] sm:px-[25px] px-[20px] lg:pt-[120px] md:pt-[80px] pt-[40px] lg:pb-[100px] pb-0 w-full lg:w-[60%] lg:order-2 order-1"
+            className="flex flex-col gap-[60px] leading-[22px] md:leading-normal lg:px-[30px] md:px-[81px] sm:px-[25px] px-[20px] lg:pt-[120px] md:pt-[80px] pt-[40px] lg:pb-[100px] pb-0 w-full lg:w-[60%] lg:order-2 order-1"
             data-aos="fade-up"
-            data-aos-delay="1800"
+            data-aos-delay="600"
           >
             <p>
               Echipa noastra de experti in constructii si amenajari interioare

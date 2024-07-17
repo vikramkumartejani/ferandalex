@@ -21,12 +21,11 @@ const OurVision: React.FC = () => {
         Viziunea noastra
       </h2>
       <div
-        className="flex lg:flex-row flex-col lg:order-1 order-2 items-end justify-between mb-auto h-full text-[#EFE8E9] md:text-[30px] text-[22px] font-[400] leading-[40.42px] tracking-[9%] font-clashdisplay-regular"
+        className="flex lg:flex-row flex-col lg:order-1 order-2 items-end  mb-auto h-full text-[#EFE8E9] md:text-[30px] text-[22px] font-[400] leading-[30px] md:leading-[40.42px] tracking-[9%] font-clashdisplay-regular"
         data-aos="fade-up"
-        data-aos-delay="800"
       >
         <div
-          className="flex flex-col gap-[60px] lg:ps-[81px] md:ps-[80px] ps-[25px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[200px] py-[50px] w-full lg:w-[60%]"
+          className="flex  flex-col gap-[60px] lg:ps-[81px] md:ps-[80px] ps-[25px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[250px] py-[50px] w-full lg:w-[60%]"
           data-aos="fade-up"
           data-aos-delay="1000"
         >
