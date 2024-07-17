@@ -18,7 +18,7 @@ const SolutionsForAnyProject: React.FC = () => {
       data-aos="fade-up"
       data-aos-delay="500"
     >
-      <h1 className="text-[35px] md:text-[50px] leading-[60px] lg:leading-[86px] text-[#F26A45] tracking-[0.09em] font-clashdisplay-bold uppercase">
+      <h1 className="text-[35px] md:text-[50px] leading-[50px] sm:leading-[60px] lg:leading-[86px] text-[#F26A45] tracking-[0.09em] font-clashdisplay-bold uppercase">
         Solutii pentru ORICE PROIECT
       </h1>
       <div
