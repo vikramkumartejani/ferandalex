@@ -18,12 +18,12 @@ const Contact = () => {
       <h1
         data-aos="fade-up"
         data-aos-delay="700"
-        className="text-white lg:text-[90px] md:text-[80px] sm:text-[60px] text-[38px] sm:leading-[85px] leading-[60px] font-bold absolute md:left-[30px] sm:left-[10px] left-0 xlg:top-[35%] lg:top-[35%] top-[23%] z-10"
+        className="text-white lg:text-[90px] md:text-[80px] sm:text-[60px] text-[38px] sm:leading-[85px] leading-[60px] font-bold absolute md:left-[30px] sm:left-[10px] left-0 xlg:top-[35%] lg:top-[35%] top-[23%] z-[7]"
       >
         Hai sa construim impreuna
       </h1>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative w-full lg:h-screen h-full flex items-center justify-end ">
+      <div className="absolute inset-0 flex items-center justify-center z-[1]">
+        <div className="relative w-full lg:h-screen h-full flex items-center justify-end z-[4]">
           <div
             className="h-full w-[70%] md:w-[60%] lg:w-[45%] relative"
             data-aos="fade-up"
