@@ -86,14 +86,14 @@ const WhatWeOffer = () => {
             />
             <div className="text-content mt-4">
               <h2
-                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                className="sm:text-[40px] text-[31px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
                 data-aos="fade-up"
                 data-aos-delay="1100"
               >
                 CONSTRUCTII
               </h2>
               <p
-                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                className="sm:text-[35px] text-[27px] sm:leading-[50px] leading-[40px] tracking-[0.09em] font-clashdisplay-regular"
                 data-aos="fade-up"
                 data-aos-delay="1400"
               >
@@ -113,14 +113,14 @@ const WhatWeOffer = () => {
             />
             <div className="text-content mt-4">
               <h2
-                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                className="sm:text-[40px] text-[31px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
                 data-aos="fade-up"
                 data-aos-delay="1100"
               >
                 PROIECTARE
               </h2>
               <p
-                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                className="sm:text-[35px] text-[27px] sm:leading-[50px] leading-[40px] tracking-[0.09em] font-clashdisplay-regular"
                 data-aos="fade-up"
                 data-aos-delay="1400"
               >
@@ -139,14 +139,14 @@ const WhatWeOffer = () => {
             />
             <div className="text-content mt-4">
               <h2
-                className="text-[40px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
+                className="sm:text-[40px] text-[31px] leading-[67px] tracking-[0.09em] font-clashdisplay-semibold"
                 data-aos="fade-up"
                 data-aos-delay="1100"
               >
                 CONSULTANTA
               </h2>
               <p
-                className="text-[35px] leading-[50px] tracking-[0.09em] font-clashdisplay-regular"
+                className="sm:text-[35px] text-[27px] sm:leading-[50px] leading-[40px] tracking-[0.09em] font-clashdisplay-regular"
                 data-aos="fade-up"
                 data-aos-delay="1400"
               >

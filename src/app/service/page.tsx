@@ -13,23 +13,20 @@ import GotoTopButton from "../components/GoToTopButton";
 const NextArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div
-      className="absolute hidden top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
+      className="absolute top-1/2 transform text-[40px] font-bold -translate-y-1/2 -right-52 cursor-pointer"
       onClick={onClick}
-      data-aos="fade-up"
     >
-      Next
+      <img src="/assets/NEXT.svg" alt="next" />
     </div>
   );
 };
-
 const PrevArrow: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
     <div
-      className="absolute hidden top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
+      className="absolute top-1/2 transform -translate-y-1/2 text-[40px] font-bold -left-52 z-30 rounded-full p-2 cursor-pointer"
       onClick={onClick}
-      data-aos="fade-up"
     >
-      Previous
+      <img src="/assets/BACK.svg" alt="back" />
     </div>
   );
 };
@@ -39,26 +36,26 @@ const Page = () => {
     AOS.init({ duration: 800 });
   }, []);
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   nextArrow: <NextArrow />,
-  //   prevArrow: <PrevArrow />,
-  // };
-  const settings = {
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  const settings1 = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    arrows: false,
     beforeChange: function (currentSlide: number, nextSlide: number) {
       console.log("before change", currentSlide, nextSlide);
     },
@@ -82,7 +79,7 @@ const Page = () => {
         <img
           src="/assets/service-bg.jpg"
           alt=""
-          className="h-[400px] md:hidden w-full"
+          className="h-[400px] md:hidden w-full object-cover"
         />
         <img
           src="/assets/service-background.png"
@@ -99,7 +96,7 @@ const Page = () => {
       </section>
 
       <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white">
-        <Slider {...settings} className="max-h-[900px] custom-slider">
+        <Slider {...settings1} className="max-h-[900px] custom-slider">
           <div className="relative">
             <div
               className="relative max-h-[900px] rounded-3xl lg:rounded-[140px] overflow-hidden"
@@ -244,7 +241,7 @@ const Page = () => {
                 className="object-cover w-full h-full"
               />
               <img
-                src="/assets/CLEANING.svg"
+                src="/assets/cleaning.svg"
                 alt=""
                 data-aos="fade-up"
                 className="absolute top-[15%] right-0"
@@ -302,50 +299,47 @@ const Page = () => {
       </section>
 
       <section className="border-t border-white max-h-[1400px] overflow-hidden">
-        <div className="mx-[5%] lg:mx-[15%] border-l border-r border-white">
+        <div className="mx-[5%] lg:mx-[15%] border-l border-r  border-white ">
           <div className="flex py-[2%] pt-[4%] justify-end items-end">
             <img
               src="/assets/GALLERY.svg"
               alt=""
               className="w-[90%] lg:w-auto"
-              data-aos="fade-up"
             />
           </div>
-
+          {/* <h1 className="gradient-text text-[70px] lg:text-[180px] leading-[180px] font-extrabold flex justify-end">
+            GALLERY
+          </h1> */}
           {/* Slick slider */}
-          <div
-            className="flex flex-col justify-center w-full mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <Slider {...settings}>
+          <div className="flex flex-col justify-center w-full mx-auto ">
+            <Slider {...settings2}>
               <div>
                 <Image
                   src="/assets/service-section-carousel-img.svg"
                   alt="Slide 1"
                   width={600}
                   height={600}
-                  className="w-full h-auto"
+                  className="  w-full h-auto"
                 />
               </div>
 
               <div>
                 <Image
                   src="/assets/service-section-carousel-img.svg"
-                  alt="Slide 2"
+                  alt="Slide 1"
                   width={600}
                   height={600}
-                  className="w-full h-auto"
+                  className="  w-full h-auto"
                 />
               </div>
 
               <div>
                 <Image
                   src="/assets/service-section-carousel-img.svg"
-                  alt="Slide 3"
+                  alt="Slide 1"
                   width={600}
                   height={600}
-                  className="w-full h-auto"
+                  className="  w-full h-auto"
                 />
               </div>
             </Slider>

@@ -15,19 +15,19 @@ const Corporate: React.FC = () => {
     <div className="bg-[#F26A45]">
       <div className="overflow-hidden">
         <h2
-          className="font-clashdisplay-bold md:pt-[160px] pt-[100px] lg:ps-[120px] lg:pe-0 md:px-[81px] sm:px-[25px] px-[20px] text-white md:text-[64px] text-[43px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[0.09em]"
+          className="font-clashdisplay-bold md:pt-[160px] pt-[100px] sm:pb-[80px] pb-[70px] lg:ps-[120px] lg:pe-0 md:px-[81px] sm:px-[50px] px-[40px] text-white md:text-[64px] sm:text-[43px] text-[33px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[0.09em]"
           data-aos="fade-up"
           data-aos-delay="500"
         >
           CORPORATE
         </h2>
         <div
-          className="flex lg:flex-row flex-col items-end justify-between mb-auto h-full md:text-[30px] text-[24px] text-[#EFE8E9] font-[400] leading-[40.42px] tracking-[9%] font-clashdisplay-regular"
+          className="flex lg:flex-row flex-col items-end justify-between mb-auto h-full md:text-[30px] sm:text-[24px] text-[18px] text-[#EFE8E9] font-[400] md:leading-[40.42px] sm:leading-[35px] leading-[30px] tracking-[9%] font-clashdisplay-regular"
           data-aos="fade-up"
           data-aos-delay="800"
         >
           <div
-            className="relative flex me-auto md:h-[1268px] w-full lg:w-1/2 lg:order-1 order-2"
+            className="relative flex me-auto lg:h-[1268px] w-full lg:w-1/2 lg:order-1 order-2"
             data-aos="fade-up"
             data-aos-delay="1000"
           >
@@ -52,7 +52,7 @@ const Corporate: React.FC = () => {
               </span>
             </div>
             <img
-              className="object-cover md:h-full sm:h-[50%] h-[10%] w-full z-[1]"
+              className="object-cover lg:h-full lg:w-full w-[80%] md:h-[80%] sm:h-[50%] h-[10%] md:w-full z-[1]"
               src="/assets/corporate.png"
               alt="corporate"
               data-aos="fade-up"

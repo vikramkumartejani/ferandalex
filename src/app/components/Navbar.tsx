@@ -11,6 +11,13 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+
+    // Toggle body scroll lock
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
   };
 
   const handleScroll = () => {
@@ -30,6 +37,11 @@ const Navbar = () => {
     };
   }, []);
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = "visible";
+  };
+
   return (
     <header className="w-full h-auto max-w-[1920px] mx-auto">
       {/* Navbar */}
@@ -44,6 +56,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center md:w-[200px] w-[160px]"
             aria-label="Homepage"
+            onClick={closeMobileMenu}
           >
             <Image src="/assets/Logo.svg" alt="Logo" width={200} height={31} />
           </Link>
@@ -54,6 +67,7 @@ const Navbar = () => {
                   href="/about"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
                   aria-label="About Us"
+                  onClick={closeMobileMenu}
                 >
                   Despre noi
                 </Link>
@@ -63,6 +77,7 @@ const Navbar = () => {
                   href="/service"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
                   aria-label="Services"
+                  onClick={closeMobileMenu}
                 >
                   Servicii
                 </Link>
@@ -72,6 +87,7 @@ const Navbar = () => {
                   href="/contact"
                   className="font-clashdisplay-light text-[30px] leading-[40px] px-5"
                   aria-label="Contact Us"
+                  onClick={closeMobileMenu}
                 >
                   Contact
                 </Link>
@@ -133,7 +149,10 @@ const Navbar = () => {
                     href="/"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Home"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      closeMobileMenu();
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                   >
                     Home
                   </Link>
@@ -141,7 +160,10 @@ const Navbar = () => {
                 <li data-aos="fade-up" data-aos-delay="100">
                   <Link
                     href="/about"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      closeMobileMenu();
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="About Us"
                   >
@@ -150,7 +172,10 @@ const Navbar = () => {
                 </li>
                 <li data-aos="fade-up" data-aos-delay="200">
                   <Link
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      closeMobileMenu();
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     href="/service"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Services"
@@ -160,7 +185,10 @@ const Navbar = () => {
                 </li>
                 <li data-aos="fade-up" data-aos-delay="300">
                   <Link
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      closeMobileMenu();
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     href="/contact"
                     className="font-clashdisplay-light text-[35px] md:text-[50px] leading-[40px] py-2"
                     aria-label="Contact Us"
@@ -170,7 +198,10 @@ const Navbar = () => {
                 </li>
               </ul>
               <button
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  closeMobileMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="border-2 border-[#FFFFFF] rounded-[45px] px-10 md:px-14 py-5 md:py-8 text-[35px] md:text-[50px] leading-[40px] font-clashdisplay-regular mt-4"
               >
                 Discuta cu noi

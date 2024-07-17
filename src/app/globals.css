@@ -118,6 +118,7 @@
   }
 }
 
+/* Base styles for the dots */
 .custom-slider .slick-dots {
   left: -110%; /* Align dots to the left */
   top: -10%; /* Center vertically */
@@ -136,4 +137,37 @@
 
 .custom-slider .slick-dots li.slick-active button:before {
   color: white;
+}
+
+/* Media query for small devices */
+@media (max-width: 1024px) {
+  .custom-slider .slick-dots {
+    left: -108.3%; /* Align dots to the left */
+    top: -10%; /* Center vertically */
+    transform: translateY(-0%); /* Center vertically */
+    rotate: 90deg;
+  }
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .custom-slider .slick-dots {
+    left: 0; /* Align dots below the image */
+    top: auto; /* Reset top position */
+    bottom: -7%; /* Place dots below the image */
+    transform: translateY(0); /* Reset transform */
+    rotate: 0deg; /* Reset rotation */
+    display: flex; /* Display dots in a row */
+    justify-content: center; /* Center dots horizontally */
+    width: 100%; /* Make dots container full width */
+  }
+
+  .custom-slider .slick-dots li {
+    display: inline-block; /* Display dots inline */
+    margin: 0 5px; /* Add horizontal margin between dots */
+  }
+  .custom-slider .slick-dots li button:before {
+    font-size: 10px; /* Adjust dot size if needed */
+    color: #d9d9d9; /* Adjust dot color if needed */
+  }
 }

@@ -14,7 +14,7 @@ const OurVision: React.FC = () => {
   return (
     <div className="overflow-hidden">
       <h2
-        className="pt-[50px] md:pt-[160px] lg:px-[120px] md:px-[80px] px-[25px] text-[#F26A45] md:text-[64px] text-[35px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
+        className="pt-[200px] lg:px-[120px] md:px-[80px] sm:px-[50px] px-[40px] text-[#F26A45] md:text-[64px] sm:text-[35px] text-[30px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
         data-aos="fade-up"
         data-aos-delay="500"
       >
@@ -44,7 +44,7 @@ const OurVision: React.FC = () => {
         </div>
 
         <div
-          className="relative me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large"
+          className="relative  me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large "
           data-aos="fade-up"
           data-aos-delay="1200"
         >
