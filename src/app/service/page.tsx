@@ -79,7 +79,7 @@ const Page = () => {
         <img
           src="/assets/service-bg.jpg"
           alt=""
-          className="h-[400px] md:hidden w-full"
+          className="h-[400px] md:hidden w-full object-cover"
         />
         <img
           src="/assets/service-background.png"
