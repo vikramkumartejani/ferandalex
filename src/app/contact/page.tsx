@@ -14,7 +14,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center bg-[#000000] min-h-screen lg:h-screen h-[800px]  overflow-hidden relative sm:m-[20px] m-[10px]">
+    <div className="flex items-center justify-center bg-[#000000] min-h-screen lg:h-screen sm:h-[800px] h-[600px]  overflow-hidden relative sm:m-[20px] m-[10px]">
       <h1
         data-aos="fade-up"
         data-aos-delay="700"
@@ -30,11 +30,11 @@ const Contact = () => {
             data-aos-delay="1200"
           >
             <img
-              className="h-[1310px] w-full object-cover"
+              className="sm:h-[1310px] h-[600px] w-full object-cover"
               src="/assets/contact-img.svg"
               alt="contact-img"
             />
-            <div className="absolute inset-0 flex w-fit md:mx-0 mx-auto flex-col items-start justify-center xlg:top-[47.5%] lg:top-[47%] md:top-[20%] sm:top-[13%] top-[-6%] gap-6 md:ps-4">
+            <div className="absolute inset-0 flex w-fit md:mx-0 mx-auto flex-col items-start justify-center xlg:top-[47.5%] lg:top-[47%] md:top-[20%] sm:top-[13%] top-[9%] gap-6 md:ps-4">
               <Link
                 href="/contact/contactinfo"
                 className="font-clashdisplay-regular w-full sm:px-6 sm:py-3 px-[10px] py-[4px] text-white text-center lg:text-[30px] md:text-[22px] sm:text-[18px] text-[15px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF52] hover:bg-[#ffffff62] transition duration-300 ease-in-out backdrop-blur-sm"
