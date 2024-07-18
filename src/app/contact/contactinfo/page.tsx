@@ -118,7 +118,7 @@ const Contact = () => {
             </div>
             <div
               data-aos="fade-up" // AOS animation
-              data-aos-delay="10" // Delay before the animation starts
+              data-aos-delay="0" // Delay before the animation starts
               className="flex flex-grow"
             >
               <div className="flex flex-col md:gap-[26px] gap-[20px] flex-grow">
@@ -142,7 +142,7 @@ const Contact = () => {
           <Link
             href="/contact/thankyou"
             data-aos="fade-up" // AOS animation
-            data-aos-delay="100" // Delay before the animation starts
+            data-aos-delay="0" // Delay before the animation starts
             className="md:text-[70px] text-[50px] font-[400] leading-[69.02px] text-white "
           >
             Trimite
