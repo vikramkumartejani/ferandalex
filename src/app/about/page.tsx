@@ -136,7 +136,6 @@ const Page = () => {
         <h2
           className="text-[40px] lg:text-[100px] leading-[50px] lg:leading-[123px] text-center"
           data-aos="fade-up"
-          data-aos-delay="500"
         >
           Angajamentul nostru
         </h2>
@@ -154,7 +153,7 @@ const Page = () => {
         <div>
           <p
             data-aos="fade-up"
-            data-aos-delay="800"
+            data-aos-delay="300"
             className="text-[20px] px-[10%] py-[15%] lg:text-[40px] leading-[30px] md:leading-[50px]"
           >
             La Ferandalex, ne angajăm să oferim mai mult decât simple

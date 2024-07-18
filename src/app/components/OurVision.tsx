@@ -16,7 +16,7 @@ const OurVision: React.FC = () => {
       <h2
         className="pt-[200px] lg:px-[120px] md:px-[80px] sm:px-[50px] px-[40px] text-[#F26A45] md:text-[64px] sm:text-[35px] text-[30px] font-[700] md:leading-[86.24px] leading-[50px] tracking-[1%] font-clashdisplay-regular"
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="400"
       >
         Viziunea noastra
       </h2>
@@ -27,7 +27,7 @@ const OurVision: React.FC = () => {
         <div
           className="flex  flex-col gap-[60px] lg:ps-[81px] md:ps-[80px] ps-[25px] pe-[25px] lg:pe-0 md:pe-[80px] md:py-[250px] py-[50px] w-full lg:w-[60%]"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="800"
         >
           <p>
             Viziunea noastra asupra arhitecturii moderne se bazeaza pe eleganta
@@ -46,7 +46,7 @@ const OurVision: React.FC = () => {
         <div
           className="relative  me-auto h-[1268px] w-full lg:w-1/2 lg:order-2 order-1 vision-large "
           data-aos="fade-up"
-          data-aos-delay="1200"
+          data-aos-delay="700"
         >
           <div className="absolute z-[999] lg:top-[14%] lg:right-0 w-[820px]">
             <img
@@ -54,14 +54,14 @@ const OurVision: React.FC = () => {
               src="/assets/MODERN.svg"
               alt="modern"
               data-aos="zoom-in"
-              data-aos-delay="1400"
+              data-aos-delay="800"
             />
             <img
               className="lg:w-[1276px] md:w-[768px] mt-[-25px]"
               src="/assets/architectureText.svg"
               alt="architecture"
               data-aos="zoom-in"
-              data-aos-delay="1600"
+              data-aos-delay="900"
             />
           </div>
           <img
@@ -70,7 +70,7 @@ const OurVision: React.FC = () => {
             src="/assets/architecture.svg"
             alt="architecture"
             data-aos="fade-up"
-            data-aos-delay="1800"
+            data-aos-delay="1000"
           />
         </div>
 

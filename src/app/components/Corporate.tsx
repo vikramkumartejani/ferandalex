@@ -62,7 +62,7 @@ const Corporate: React.FC = () => {
           <div
             className="flex flex-col gap-[60px] leading-[22px] md:leading-normal lg:px-[30px] md:px-[81px] sm:px-[25px] px-[20px] lg:pt-[120px] md:pt-[80px] pt-[40px] lg:pb-[100px] pb-0 w-full lg:w-[60%] lg:order-2 order-1"
             data-aos="fade-up"
-            data-aos-delay="600"
+            data-aos-delay="300"
           >
             <p>
               Echipa noastra de experti in constructii si amenajari interioare

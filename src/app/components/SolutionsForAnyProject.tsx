@@ -16,7 +16,7 @@ const SolutionsForAnyProject: React.FC = () => {
     <div
       className="bg-white px-4 lg:px-[40px] 2xl:px-[60px] py-[100px]"
       data-aos="fade-up"
-      data-aos-delay="500"
+      data-aos-delay="300"
     >
       <h1 className="text-[35px] md:text-[50px] leading-[50px] sm:leading-[60px] lg:leading-[86px] text-[#F26A45] tracking-[0.09em] font-clashdisplay-bold uppercase">
         Solutii pentru ORICE PROIECT
@@ -24,7 +24,7 @@ const SolutionsForAnyProject: React.FC = () => {
       <div
         className="mt-[70px] flex justify-between lg:items-start items-center lg:flex-row flex-col gap-[60px]"
         data-aos="fade-up"
-        data-aos-delay="1000"
+        data-aos-delay="400"
       >
         <Image
           src="/assets/solutions-for-any-project.svg"
@@ -33,7 +33,7 @@ const SolutionsForAnyProject: React.FC = () => {
           height={754}
           className=""
           data-aos="zoom-in"
-          data-aos-delay="1500"
+          data-aos-delay="600"
         />
         <div data-aos="fade-up" data-aos-delay="2000">
           <p className="font-clashdisplay-regular text-[24px] md:text-[28px] tracking-[0.07em] mt-10">
