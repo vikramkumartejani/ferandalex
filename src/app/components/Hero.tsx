@@ -51,6 +51,7 @@ const Hero: React.FC = () => {
           autoPlay
           loop
           muted
+          playsInline
         >
           <source
             src="/assets/hero.mp4"
