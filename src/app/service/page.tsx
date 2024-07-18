@@ -67,13 +67,13 @@ const Page = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setSettings1(prevSettings => ({
+        setSettings1((prevSettings) => ({
           ...prevSettings,
           vertical: false,
           verticalSwiping: false,
         }));
       } else {
-        setSettings1(prevSettings => ({
+        setSettings1((prevSettings) => ({
           ...prevSettings,
           vertical: true,
           verticalSwiping: true,
@@ -82,11 +82,10 @@ const Page = () => {
     };
 
     handleResize(); // Call once on mount to set initial state
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
   return (
     <div className="text-white font-clashdisplay-regular">
@@ -114,7 +113,7 @@ const Page = () => {
         <img
           src="/assets/SERVICII.svg"
           alt=""
-          className="absolute top-[60%] lg:top-2/3 ml-[5%] w-24 h-auto lg:w-auto uppercase"
+          className="absolute top-[68%] sm:top-[67%] lg:top-2/3 lg:ml-[5%] md:ml-[5%] ml-[23%] sm:w-[150px] w-24 h-auto lg:w-auto uppercase"
           data-aos="fade-up"
         />
       </section>
