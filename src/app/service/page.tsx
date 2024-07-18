@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -48,7 +48,7 @@ const Page = () => {
     prevArrow: <PrevArrow />,
   };
 
-  const settings1 = {
+  const [settings1, setSettings1] = useState({
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -56,13 +56,37 @@ const Page = () => {
     vertical: true,
     verticalSwiping: true,
     arrows: false,
-    beforeChange: function (currentSlide: number, nextSlide: number) {
+    beforeChange: function (currentSlide: any, nextSlide: any) {
       console.log("before change", currentSlide, nextSlide);
     },
-    afterChange: function (currentSlide: number) {
+    afterChange: function (currentSlide: any) {
       console.log("after change", currentSlide);
     },
-  };
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSettings1(prevSettings => ({
+          ...prevSettings,
+          vertical: false,
+          verticalSwiping: false,
+        }));
+      } else {
+        setSettings1(prevSettings => ({
+          ...prevSettings,
+          vertical: true,
+          verticalSwiping: true,
+        }));
+      }
+    };
+
+    handleResize(); // Call once on mount to set initial state
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
   return (
     <div className="text-white font-clashdisplay-regular">
