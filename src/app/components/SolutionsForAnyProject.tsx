@@ -35,7 +35,7 @@ const SolutionsForAnyProject: React.FC = () => {
           data-aos="zoom-in"
           data-aos-delay="600"
         />
-        <div data-aos="fade-up" data-aos-delay="2000">
+        <div data-aos="fade-up" data-aos-delay="500">
           <p className="font-clashdisplay-regular text-[24px] md:text-[28px] tracking-[0.07em] mt-10">
             <span className="font-clashdisplay-bold text-[30px] md:text-[40px]">
               Ferandalex
