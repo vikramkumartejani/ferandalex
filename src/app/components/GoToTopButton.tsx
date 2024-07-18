@@ -33,7 +33,7 @@ const GoToTopButton = () => {
     >
       <button onClick={handleGoToTop} className="md:w-[68.38px] w-[50px]">
         <img
-          src="/assets/up-arrow.svg"
+          src="/assets/up-arrow.png"
           alt="Go to top"
           className="h-[100%] w-[100%] object-cover"
         />
