@@ -120,7 +120,7 @@ const Footer = () => {
         <div
           className="lg:hidden flex gap-[24px] mx-auto justify-center py-[14px]"
           data-aos="fade-up"
-          data-aos-delay="1000"
+          data-aos-delay="200"
         >
           <a href="#" aria-label="X" className="my-auto">
             <BsTwitterX size={28} color="#000" />
