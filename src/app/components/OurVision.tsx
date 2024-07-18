@@ -81,7 +81,7 @@ const OurVision: React.FC = () => {
         >
           <div className="absolute z-[999] lg:top-[14%] top-[35%] lg:right-0 lg:w-[820px] md:w-[740px] sm:w-[600px] w-[300px] mx-auto left-1/2 transform -translate-x-1/2">
             <img
-              className="h-fit lg:w-[464px] md:w-[400px] sm:w-[332px] w-[200px] md:ms-[16px] sm:ms-[10px] ms-[5px]"
+              className="h-fit lg:w-[464px] md:w-[400px] sm:w-[332px] w-[200px] md:ms-[16px] sm:ms-[10px]"
               src="/assets/MODERN.svg"
               alt="modern"
               data-aos="zoom-in"
