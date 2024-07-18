@@ -32,7 +32,7 @@ const Corporate: React.FC = () => {
             data-aos-delay="1000"
           >
             <div className="absolute z-2 md:top-[13%] sm:top-[14%] top-[25%] lg:left-[30%] left-2 w-[820px]">
-              <span className="relative z-[2] md:z-0">
+              <span className="relative z-20 md:z-0">
                 <img
                   className="h-fit lg:w-[1052px]  md:w-[750px] sm:w-[620px] w-[300px]"
                   src="/assets/CORPORATE.svg"
@@ -41,7 +41,7 @@ const Corporate: React.FC = () => {
                   data-aos-delay="300"
                 />
               </span>
-              <span className="relative z-[2]">
+              <span className="relative z-20">
                 <img
                   className="lg:w-[700px] md:w-[650px] sm:w-[540px] w-[260px] md:mt-[-15px] sm:mt-[-10px] mt-[-5px]"
                   src="/assets/PROJECTS.svg"
@@ -52,7 +52,7 @@ const Corporate: React.FC = () => {
               </span>
             </div>
             <img
-              className="object-cover lg:h-full lg:w-full w-[80%] md:h-[80%] sm:h-[50%] h-[10%] md:w-full z-[1]"
+              className="object-cover lg:h-full lg:w-full w-[80%] md:h-[80%] sm:h-[50%] h-[10%] md:w-full z-10"
               src="/assets/corporate.png"
               alt="corporate"
               data-aos="fade-up"
