@@ -34,7 +34,7 @@ const Contact = () => {
               src="/assets/contact-img.svg"
               alt="contact-img"
             />
-            <div className="absolute inset-0 flex w-fit md:mx-0 mx-auto flex-col items-start justify-center xlg:top-[40%] lg:top-[47%] md:top-[40%] sm:top-[33%] xs:top-[0%] top-[10%] gap-6 md:ps-4">
+            <div className="absolute inset-0 flex w-fit md:mx-0 mx-auto flex-col items-start justify-center xlg:top-[40%] lg:top-[47%] md:top-[40%] sm:top-[33%] xs:top-[7%] top-[10%] gap-6 md:ps-4">
               <Link
                 href="/contact/contactinfo"
                 className="font-clashdisplay-regular w-full sm:px-6 sm:py-3 px-[10px] py-[4px] text-white text-center lg:text-[30px] md:text-[22px] sm:text-[18px] text-[15px] border-2 border-[#FFFFFF1A] rounded-[70px] bg-[#FFFFFF52] hover:bg-[#ffffff62] transition duration-300 ease-in-out backdrop-blur-sm"
