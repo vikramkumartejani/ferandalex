@@ -91,7 +91,7 @@ const Page = () => {
     <div className="text-white font-clashdisplay-regular">
       <section
         data-aos="fade-down"
-        data-aos-delay="1000"
+        data-aos-delay="10"
         className="relative h-[400px] md:h-full w-full"
       >
         <img
@@ -118,7 +118,10 @@ const Page = () => {
         />
       </section>
 
-      <section className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white">
+      <section
+        className="px-[5%] lg:px-[10%] py-[10%] space-y-[15%] mx-[5%] lg:mx-[15%] border-l border-r border-white"
+        data-aos="fade-in"
+      >
         <Slider {...settings1} className="max-h-[900px] custom-slider">
           <div className="relative">
             <div
