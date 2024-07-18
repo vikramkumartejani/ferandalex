@@ -77,7 +77,7 @@ const OurVision: React.FC = () => {
         <div
           className="relative me-auto md:h-[1268px] h-[600px] w-full lg:w-1/2 lg:order-2 order-1 vision-small"
           data-aos="fade-up"
-          data-aos-delay="2000"
+          data-aos-delay="600"
         >
           <div className="absolute z-[999] lg:top-[14%] top-[35%] lg:right-0 lg:w-[820px] md:w-[740px] sm:w-[600px] w-[300px] mx-auto left-1/2 transform -translate-x-1/2">
             <img
