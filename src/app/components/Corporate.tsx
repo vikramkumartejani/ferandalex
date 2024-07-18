@@ -31,7 +31,27 @@ const Corporate: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="1000"
           >
-            <div className="absolute md:top-[13%] sm:top-[14%] top-[25%] lg:left-[30%] left-2 w-[820px]">
+            <div className="md:hidden block absolute md:top-[13%] sm:top-[14%] top-[25%] lg:left-[30%] left-2 w-[820px]">
+              <span className="relative z-30 md:z-0">
+                <img
+                  className="h-fit lg:w-[1052px]  md:w-[750px] sm:w-[620px] w-[300px]"
+                  src="/assets/CORPORATE.svg"
+                  alt="modern"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                />
+              </span>
+              <span className="relative z-30">
+                <img
+                  className="lg:w-[700px] md:w-[650px] sm:w-[540px] w-[260px] md:mt-[-15px] sm:mt-[-10px] mt-[-5px]"
+                  src="/assets/PROJECTS.svg"
+                  alt="architecture"
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                />
+              </span>
+            </div>
+            <div className="md:block hidden absolute md:top-[13%] sm:top-[14%] top-[25%] lg:left-[30%] left-2 w-[820px]">
               <span className="relative z-30 md:z-0">
                 <img
                   className="h-fit lg:w-[1052px]  md:w-[750px] sm:w-[620px] w-[300px]"
