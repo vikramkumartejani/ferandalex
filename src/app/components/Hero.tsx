@@ -74,13 +74,13 @@ const Hero: React.FC = () => {
             className=""
             height={10}
             data-aos="fade-up"
-            data-aos-delay="800"
+            data-aos-delay="500"
           />
           <div className="flex items-end justify-end max-w-[1000px] ">
             <div
               className="relative max-w-[1000px] flex items-start justify-end lg:justify-between  w-full"
               data-aos="fade-up"
-              data-aos-delay="800"
+              data-aos-delay="500"
             >
               <Image
                 src="/assets/sroll.svg"
@@ -135,7 +135,11 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <button className="flex items-center justify-center">
+          <button
+            className="flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <Image
               src="/assets/sroll.svg"
               alt="Image"
