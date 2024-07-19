@@ -268,7 +268,7 @@ const Page = () => {
               />
               <img
                 src="/assets/cleaning.svg"
-                alt=""
+                alt="img"
                 data-aos="fade-up"
                 className="absolute top-[15%] right-0"
               />
