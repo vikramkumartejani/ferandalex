@@ -268,8 +268,10 @@ const Page = () => {
               />
               <img
                 src="/assets/clen.svg"
-                alt="img"
+                alt="Cleaning"
                 data-aos="fade-up"
+                width={883}
+                height={150}
                 className="absolute top-[15%] right-0"
               />
               {/* <div>
@@ -315,7 +317,7 @@ const Page = () => {
                 className="object-cover w-full h-full"
               />
               <img
-                src="/assets/cleaning.svg"
+                src="/assets/clen.svg"
                 alt=""
                 className="absolute top-[15%] w-[90%] h-auto right-0"
               />
