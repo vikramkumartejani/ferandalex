@@ -266,8 +266,13 @@ const Page = () => {
                 data-aos="zoom-out"
                 className="object-cover w-full h-full"
               />
-              <div  data-aos="fade-up"
-                className="absolute top-[15%] right-0">
+              <img
+                src="/assets/clen.svg"
+                alt="img"
+                data-aos="fade-up"
+                className="absolute top-[15%] right-0"
+              />
+              {/* <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="867"
@@ -280,7 +285,7 @@ const Page = () => {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </div> */}
               <div
                 data-aos="fade-up"
                 className="absolute bottom-0 w-full bg-black/30 py-[15%] px-[5%] flex items-center justify-center text-[30px] leading-[37px] text-start backdrop-blur-sm"
